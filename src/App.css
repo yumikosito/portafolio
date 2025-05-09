@@ -1,0 +1,13 @@
+:root {
+  --pinkColor: #ffffff;
+  --redColor: #ED9C9C;
+  --skyBlue:#9BE8F5;
+  --whiteColor:#ffffff;
+  --greenColor:#249F3F;
+  --blackColor:#323232;
+}
+
+#navbarConfig {
+  background-color: var(--pinkColor);
+  font-size: 1.3rem;
+}

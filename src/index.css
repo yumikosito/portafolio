@@ -1,0 +1,71 @@
+:root {
+  --orangeColor: #f0935d;
+  --purpleColor: #832e70;
+  --skyBlue:#9BE8F5;
+  --whiteColor:#f3f3f3;
+  --greenColor:#155222;
+  --blackColor:#323232;
+}
+
+
+/* CSS Navbar */
+#navbarConfig {
+  background-color: var(--orangeColor);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: var(--orangeColor) solid 1px;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: var(--purpleColor);
+}
+
+.bi-linkedin:hover {
+  width: 30px;
+  height: 30px;
+  animation: tada;
+  animation-duration: 2s;
+  color: var(--whiteColor);
+}
+
+.bi-github:hover {
+  width: 30px;
+  height: 30px;
+  animation: tada;
+  animation-duration: 2s;
+  color: var(--whiteColor);
+}
+
+
+
+
+/* CSS header */
+.banner {
+  margin-top: 0;
+  padding: 2rem 0 2rem 0;
+  background-image: url('./assets/img/header.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photoHeader {
+  width:15rem;
+  height: 15rem;
+}
+
+.headerBackground {
+  background: rgba(233, 233, 233, 0.55);
+  margin: auto;
+}
+.tagline {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--blackColor);
+  text-align: start;
+}
+.headerSubtext{
+  font-weight: 550;
+  color: var(--blackColor);
+}
