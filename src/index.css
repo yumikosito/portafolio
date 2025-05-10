@@ -142,6 +142,19 @@
   color: #68027c;
 }
 
+.animatedIconNode:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #82ca47;
+}
+
+.animatedIconExpress:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #afafaf;
+}
+
+
 .iconTextTech{
   font-size: 1.5rem;
   text-align: justify;
