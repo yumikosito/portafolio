@@ -1,6 +1,6 @@
 :root {
   --orangeColor: #f0935d;
-  --purpleColor: #832e70;
+  --purpleColor: #6e0858;
   --skyBlue:#9BE8F5;
   --whiteColor:#f3f3f3;
   --greenColor:#155222;
@@ -10,31 +10,42 @@
 
 /* CSS Navbar */
 #navbarConfig {
-  background-color: var(--orangeColor);
+  background-color: rgba(78, 78, 78, 0.6);
   font-size: 1.3rem;
   font-weight: 600;
-  border: var(--orangeColor) solid 1px;
+  transition: 0.32s ease-in;
 }
 
-nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: var(--purpleColor);
+
+.nav-link{
+  color: var(--whiteColor);
+  text-decoration: none
+}
+.nav-link:hover{
+  color: var(--purpleColor);
+}
+
+.navbar.scrolled {
+  padding: 0.3rem 0;
+  background-color: transparent;
+  transition: 0.32s ease-in-out;
+  background-color: var(--orangeColor) !important;
 }
 
 .bi-linkedin:hover {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   animation: tada;
-  animation-duration: 2s;
-  color: var(--whiteColor);
+  animation-duration: 1.5s;
+  color: var(--purpleColor);
 }
 
 .bi-github:hover {
   width: 30px;
   height: 30px;
   animation: tada;
-  animation-duration: 2s;
-  color: var(--whiteColor);
+  animation-duration: 1.5s;
+  color: var(--purpleColor);
 }
 
 
@@ -43,9 +54,9 @@ nav.navbar.scrolled {
 /* CSS header */
 .banner {
   margin-top: 0;
-  padding: 2rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
   background-image: url('./assets/img/header.png');
-  background-position: top center;
+  background-position:  center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -56,7 +67,7 @@ nav.navbar.scrolled {
 }
 
 .headerBackground {
-  background: rgba(233, 233, 233, 0.55);
+  background: rgba(233, 233, 233, 0.8);
   margin: auto;
 }
 .tagline {
@@ -68,4 +79,70 @@ nav.navbar.scrolled {
 .headerSubtext{
   font-weight: 550;
   color: var(--blackColor);
+}
+
+/* CSS Footer */
+
+#footer {
+  background-color: var(--orangeColor);
+}
+.footerText{
+  font-size: 1.3rem;
+}
+
+/* CSS Skills */
+
+
+
+.animatedIconBootstrap:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #701ddd;
+}
+
+.animatedIconHTML:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #df6b0c;
+}
+
+.animatedIconCSS:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #2e6aec;
+}
+
+.animatedIconReact:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #27bce9;
+}
+
+.animatedIconJavascript:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #f1df39;
+}
+
+.animatedIconReactB:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #27bce9;
+}
+
+.animatedIconWordpress:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #0691e2;
+}
+
+.animatedIconAxios:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #68027c;
+}
+
+.iconTextTech{
+  font-size: 1.5rem;
+  text-align: justify;
 }

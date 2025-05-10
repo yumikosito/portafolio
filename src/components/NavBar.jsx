@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <div>
-    <Navbar expand="lg" sticky="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
+    <Navbar fluid fixed="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
       <Container fluid>
         {/* <Navbar.Brand href="#home">Millaray Painemil</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
@@ -40,11 +40,11 @@ const NavBar = () => {
           <Nav>
             <Nav.Link as={Link} to='/'>Home</Nav.Link>
             <NavDropdown title="Sobre mí">
-              <NavDropdown.Item href="#skills">Habilidades</NavDropdown.Item>
-              <NavDropdown.Item href="#education">Educación</NavDropdown.Item>
-              <NavDropdown.Item href="#experience">Experiencia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/'>Habilidades</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/'>Experiencia</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#portfolio">Portafolio</Nav.Link>
+            <Nav.Link as={Link} to='/'>Portafolio</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito"><Github size={25}/></Nav.Link>
       
