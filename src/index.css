@@ -1,12 +1,12 @@
 :root {
-  --orangeColor: #f0935d;
+  --orangeColor: rgb(240, 147, 93);
   --purpleColor: #6e0858;
   --skyBlue:#2ebdd6;
   --whiteColor:#f3f3f3;
   --greenColor:#9dd158;
   --blackColor:#323232;
   --redColor: #b6210d;
-  --pinkColor: #f3b1a1;
+  --pinkColor: #faedea;
   --blueColor: #3345b1;
 }
 
@@ -215,9 +215,69 @@
 }
 
 .englishProg .progress-bar.progress-bar-striped.progress-bar-animated{
-  background-color: var(--pinkColor);
+  background-color: var(--orangeColor);
 }
 
 .japaneseProg .progress-bar.progress-bar-striped.progress-bar-animated{
   background-color: var(--skyBlue);
+}
+
+/* CSS experience */
+
+#eduCard img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5%;
+}
+
+.container {
+  position : relative;
+}
+
+.container .card {
+  position: relative;
+  border: white 1px;
+  
+
+  transition : 0.3s ease-in-out;
+}
+.container .card:hover {
+  top : -10%;
+  height : 20rem;    
+}
+
+.container .card .logoContent {
+  position : relative;
+  top : -10%;
+  z-index : 1;
+
+  background-color: white;
+  border: var(--orangeColor) 1px solid;
+}
+
+.container .card .content {
+  position : relative;
+  top : -140px;
+  color : #2b2b2b;
+
+  font-size: 1.1rem;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.container .card:hover .content {
+   margin-top : 4rem;
+   padding-top: 4rem;
+   left: +50px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+   background-color : var(--pinkColor);
+   border: var(--pinkColor);
+   box-shadow: 0 10px 20px rgba(240, 147, 93, 0.5)
+  
+  
 }
