@@ -1,10 +1,13 @@
 :root {
   --orangeColor: #f0935d;
   --purpleColor: #6e0858;
-  --skyBlue:#9BE8F5;
+  --skyBlue:#2ebdd6;
   --whiteColor:#f3f3f3;
-  --greenColor:#155222;
+  --greenColor:#9dd158;
   --blackColor:#323232;
+  --redColor: #b6210d;
+  --pinkColor: #f3b1a1;
+  --blueColor: #3345b1;
 }
 
 
@@ -153,9 +156,68 @@
   animation-duration: 1.5s;
   color: #afafaf;
 }
+.animatedIconJest:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #d84a31;
+}
+
+.animatedIconPostgreSQL:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #4770c7;
+}
+
+.animatedIconMicrosoft:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #e95d0b;
+}
+
+.animatedIconPhotoshop:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #311b92;
+}
+
+.animatedIconGit:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #ec5813;
+}
+.animatedIconGithub:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #7d18f0;
+}
+
+.animatedIconFigma:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #50db8a;
+}
 
 
 .iconTextTech{
   font-size: 1.5rem;
   text-align: justify;
+}
+
+/* CSS Languages */
+
+.langText {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.spanishProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--greenColor);
+}
+
+.englishProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--pinkColor);
+}
+
+.japaneseProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--skyBlue);
 }

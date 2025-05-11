@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <div>
-    <Navbar fluid fixed="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
+    <Navbar fixed="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
       <Container fluid>
         {/* <Navbar.Brand href="#home">Millaray Painemil</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
@@ -42,6 +42,7 @@ const NavBar = () => {
             <NavDropdown title="Sobre mí">
               <NavDropdown.Item as={Link} to='/'>Habilidades</NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/'>Certificaciones</NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/'>Experiencia</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to='/'>Portafolio</Nav.Link>
