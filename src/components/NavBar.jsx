@@ -40,12 +40,12 @@ const NavBar = () => {
           <Nav>
             <Nav.Link as={Link} to='/'>Home</Nav.Link>
             <NavDropdown title="Sobre mí">
-              <NavDropdown.Item as={Link} to='/'>Habilidades</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/'>Educación</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/'>Certificaciones</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/'>Experiencia</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/skills'>Habilidades</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/education'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/certifications'>Certificaciones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/experience'>Experiencia</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='/'>Portafolio</Nav.Link>
+            <Nav.Link as={Link} to='/portafolio'>Portafolio</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito"><Github size={25}/></Nav.Link>
       

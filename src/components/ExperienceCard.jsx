@@ -22,7 +22,7 @@ const ExperienceCard = () => {
           </div>
       
             
-            <div class= "content rounded-3">
+            <div className= "content rounded-3">
               <p className='px-4'> - Trato directo con pacientes y equipo médico multidisciplinario.<br/>
               - Realizar orden dietética de lo requerido por paciente, relacionando patologías, síntomas, preferencias e indicación médica.<br/>
               - Supervisión de personal dietético para entrega de bandejas, almuerzos especiales, rellenado de controles de ingesta e hidratación</p>
@@ -30,20 +30,6 @@ const ExperienceCard = () => {
  
    
         </div>
-        
-
-              {/* <div class= "card">
-                <div class= "image">
-                  <img class="img-job" src={logoPUC} alt="PUC-Logo"/>
-                </div>
-                <div class= "content">
-            
-                  <h3>Pontificia Universidad catolica</h3>
-                  <h4>Nutrición y dietética</h4>
-                  <h5>2015-2020</h5>
-                </div>
-              </div>    
-            </div> */}
       </Container>
     </div>
   )

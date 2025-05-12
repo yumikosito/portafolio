@@ -8,20 +8,33 @@ import Education from './pages/Education';
 import Certifications from './pages/Certifications';
 import Experience from './pages/Experience';
 import Portfolio from './pages/Portfolio';
+import { Route, Routes, Switch } from 'react-router-dom';
+import React from 'react';
 
 function App() {
 
 
   return (
     <>
-    <NavBar/>
-    <Header/>
-    <Skills/>
-    <Education/>
-    <Certifications/>
-    <Experience/>
-    <Portfolio/>
-    <Footer/>
+    <React.Fragment>
+      <NavBar/>
+    
+      {/* <Skills/>
+      <Education/>
+      <Certifications/>
+      <Experience/>
+      <Portfolio/> */}
+  
+      <Routes>
+        <Header/>
+        <Route path='/skills' exact Component={<Skills/>}></Route>
+        <Route path='/education' strict exact Component={<Education/>}></Route>
+        <Route path='/certifications' strict exact Component={<Certifications/>}></Route>
+        <Route path='/experience' strict exact Component={<Experience/>}></Route>
+        <Route path='/portfolio' strict exact Component={<Portfolio/>}></Route>
+      </Routes>
+      <Footer/>
+    </React.Fragment>
     </>
   )
 }
