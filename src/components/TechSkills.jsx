@@ -9,7 +9,7 @@ import { TbBrandOffice } from "react-icons/tb";
 const TechSkills = () => {
   return (
     <div>
-      <Container className='my-2 py-3'>
+      <Container className='my-2 py-3' id='techSkills'>
         <h1>Tecnologías</h1>
         <Row className='my-2 py-2 ps-4 d-flex'>
     

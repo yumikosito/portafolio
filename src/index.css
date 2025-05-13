@@ -6,10 +6,13 @@
   --greenColor:#9dd158;
   --blackColor:#323232;
   --redColor: #b6210d;
-  --pinkColor: #faedea;
+  --pinkColor: rgb(250, 237, 234);
   --blueColor: #3345b1;
 }
 
+/* *{
+  color: var(--blackColor);
+} */
 
 /* CSS Navbar */
 #navbarConfig {
@@ -100,7 +103,7 @@
 .animatedIconBootstrap:hover{
   animation: flash;
   animation-duration: 1.5s;
-  color: #701ddd;
+  color: #701ddd !important;
 }
 
 .animatedIconHTML:hover{
@@ -275,7 +278,7 @@
    opacity : 1;
    transition-delay: 0.2s;
    background-color : var(--pinkColor);
-   border: var(--pinkColor);
+   border: none;
    box-shadow: 0 0.3rem 2rem rgba(240, 147, 93, 0.5)
 }
 
@@ -283,15 +286,21 @@
 
 #portCard .card{
   background-color: var(--pinkColor);
-  box-shadow:0 0.3rem 2rem rgba(240, 147, 93, 0.5) ;
-  border: var(--pinkColor) 1px solid;
+  box-shadow:0 0.3rem 2rem rgba(160, 146, 142, 0.5) ;
+  border: none;
+  border-radius: 5%;
+  max-height: 35rem;
 }
 
 #portCard .card .portImg{
   width: 100%;
+  border-radius: 0 5% 5% 0;
+  max-height: 100%;
 }
+
+
 .portTitle {
-  font-size: 2rem;
+  font-size: 1.6rem;
 
 }
 
@@ -300,19 +309,34 @@
   
 }
 .bar{
-  width: 50px;
-  height: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
+  width: 5rem;
+  height: 0.5rem;
   background-color: var(--purpleColor);
   transition: width 0.2s ease;
 }
 
+#portCard .card:hover .bar{
+  width: 10rem;
+}
+
 .portText{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 350;
 }
 
-.portList{
+.list-group-item.portListLink{
   width: 13rem;
+  background-color: var(--whiteColor);
+  border:none
+}
+.list-group-item.portListAuthor{
+  width: 11rem;
+  background-color: var(--greenColor);
+  color: var(--blackColor);
+  border: none;
+}
+
+.portListLink.list-group-item-action:hover{
+   width: 13rem;
+  background-color: var(--greenColor);
 }
