@@ -1,18 +1,21 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ExperienceCard from '../components/ExperienceCard'
 import { ExperienceJs } from '../../experience'
+import axios from 'axios'
 
 const Experience = () => {
-  // const [ exp, setExp] = useState([])
-  // const getData = async () =>{
-  //   const data= await ExperienceJs()
-  //   console.log(data);
-    
-  //     setExp(data)
-  // }
+  const [ exp, setExp] = useState([])
 
-  // console.log(exp);
+  const getData = async () =>{
+     const res = await ExperienceJs()
+     setExp(res)
+  }
+
+  useEffect(() => {
+    getData();
+  }, []);
+  console.log(exp);
   
   const expRef = useRef();
 
@@ -28,10 +31,13 @@ const scrollToElement = () => {
       <Container className='my-2 py-3'>
         <h1>Experiencia</h1>
         <Row className='my-2 py-2 ps-4 d-flex'>
-          <Col xs={12} md={6}>
-            <ExperienceCard/>
-          </Col>
-          
+          {exp.map((item, index) =>(
+            <Col xs={12} md={6}>
+              <ExperienceCard key={index} {...item}/>
+            </Col>
+          ))
+         
+          }
         </Row>
         
       </Container>

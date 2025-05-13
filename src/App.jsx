@@ -8,7 +8,7 @@ import Education from './pages/Education';
 import Certifications from './pages/Certifications';
 import Experience from './pages/Experience';
 import Portfolio from './pages/Portfolio';
-import { Route, Routes, Switch } from 'react-router-dom';
+import { Route, Routes, } from 'react-router-dom';
 import React from 'react';
 
 function App() {
@@ -16,25 +16,27 @@ function App() {
 
   return (
     <>
-    <React.Fragment>
+
       <NavBar/>
+       <Header/>
     
-      {/* <Skills/>
+      <Skills/>
       <Education/>
       <Certifications/>
       <Experience/>
-      <Portfolio/> */}
+      <Portfolio/>
   
-      <Routes>
-        <Header/>
-        <Route path='/skills' exact Component={<Skills/>}></Route>
-        <Route path='/education' strict exact Component={<Education/>}></Route>
-        <Route path='/certifications' strict exact Component={<Certifications/>}></Route>
-        <Route path='/experience' strict exact Component={<Experience/>}></Route>
-        <Route path='/portfolio' strict exact Component={<Portfolio/>}></Route>
-      </Routes>
+ 
+       
+        {/* <Routes>
+          <Route path='/skills' element={<Skills/>} ></Route>
+          <Route path='/education' element={<Education/>}></Route>
+          <Route path='/certifications'  Component={<Certifications/>}></Route>
+          <Route path='/experience'  Component={<Experience/>}></Route>
+          <Route path='/portfolio'  Component={<Portfolio/>}></Route>
+        </Routes> */}
       <Footer/>
-    </React.Fragment>
+
     </>
   )
 }
