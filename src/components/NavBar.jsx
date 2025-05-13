@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
-  let {activeLink,setActiveLink} = useContext(ActiveContext);
 
   const [scrolled,setScrolled]=useState(false);
 
@@ -26,9 +25,7 @@ const NavBar = () => {
     return ()=>window.removeEventListener('scroll',onScroll)
   },[])
 
-  const onUpdateActiveLink = (value)=>{
-    setActiveLink(value);
-  }
+
 
   return (
     <div>

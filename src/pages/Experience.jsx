@@ -1,39 +1,31 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ExperienceCard from '../components/ExperienceCard'
-import { ExperienceJs } from '../../experience'
+import { ExperienceJs } from '../assets/js/experience'
 import axios from 'axios'
+import { GetContext } from '../contexts/getContext'
 
 const Experience = () => {
-  const [ exp, setExp] = useState([])
+  const {exps} = useContext(GetContext)
 
-  const getData = async () =>{
-     const res = await ExperienceJs()
-     setExp(res)
-  }
+  // const getData = async () =>{
+  //    const res = await ExperienceJs()
+  //    setExp(res)
+  // }
 
-  useEffect(() => {
-    getData();
-  }, []);
-  console.log(exp);
-  
-  const expRef = useRef();
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
-const scrollToElement = () => {
-  const {current} = divRef
-   if (current !== null){
-     current.scrollIntoView({behavior: "smooth"})
-   }
-}
   
   return (
-    <div id='experienceContainer' ref={expRef}>
+    <div id='experienceContainer'>
       <Container className='my-2 py-3'>
         <h1>Experiencia</h1>
         <Row className='my-2 py-2 ps-4 d-flex'>
-          {exp.map((item, index) =>(
-            <Col xs={12} md={6}>
-              <ExperienceCard key={index} {...item}/>
+          {exps.map((item, index) =>(
+            <Col xs={12} md={6} key={index}>
+              <ExperienceCard  {...item}/>
             </Col>
           ))
          

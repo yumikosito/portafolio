@@ -1,13 +1,12 @@
 import React from 'react'
-import { Card, Col, Container, Image, Row } from 'react-bootstrap'
+import { Card, CardBody, Col, Container, Image, Row } from 'react-bootstrap'
 
 const ExperienceCard = (experience) => {
-  console.log(experience);
   
   return (
-    <div id="eduCard">
-      <Container fluid className='my-2 py-4 ps-4'>
-        <div className='card'>
+    <div >
+      <Container fluid className='my-2 py-4 ps-4' id="eduCard">
+        <Card>
           <div className='logoContent rounded-3'>
             <Row className=''>
                 <Col xs={12} sm={4}>
@@ -32,7 +31,7 @@ const ExperienceCard = (experience) => {
               </div>
  
    
-        </div>
+        </Card>
       </Container>
     </div>
   )

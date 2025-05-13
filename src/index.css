@@ -230,23 +230,22 @@
   border-radius: 5%;
 }
 
-.container {
+#eduCard {
   position : relative;
 }
 
-.container .card {
+#eduCard .card {
   position: relative;
   border: white 1px;
-  
-
   transition : 0.3s ease-in-out;
 }
-.container .card:hover {
+
+#eduCard .card:hover {
   top : -10%;
   height : 20rem;    
 }
 
-.container .card .logoContent {
+#eduCard .card .logoContent {
   position : relative;
   top : -10%;
   z-index : 1;
@@ -255,7 +254,7 @@
   border: var(--orangeColor) 1px solid;
 }
 
-.container .card .content {
+#eduCard .card .content {
   position : relative;
   top : -140px;
   color : #2b2b2b;
@@ -268,7 +267,7 @@
     
 }
 
-.container .card:hover .content {
+#eduCard  .card:hover .content {
    margin-top : 4rem;
    padding-top: 4rem;
    left: +50px;
@@ -277,5 +276,43 @@
    transition-delay: 0.2s;
    background-color : var(--pinkColor);
    border: var(--pinkColor);
-   box-shadow: 0 10px 20px rgba(240, 147, 93, 0.5)
+   box-shadow: 0 0.3rem 2rem rgba(240, 147, 93, 0.5)
+}
+
+/* CSS portfolio */
+
+#portCard .card{
+  background-color: var(--pinkColor);
+  box-shadow:0 0.3rem 2rem rgba(240, 147, 93, 0.5) ;
+  border: var(--pinkColor) 1px solid;
+}
+
+#portCard .card .portImg{
+  width: 100%;
+}
+.portTitle {
+  font-size: 2rem;
+
+}
+
+.portDate {
+  font-size: 1.2rem;
+  
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: var(--purpleColor);
+  transition: width 0.2s ease;
+}
+
+.portText{
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+
+.portList{
+  width: 13rem;
 }

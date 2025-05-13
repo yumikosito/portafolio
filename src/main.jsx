@@ -2,16 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { ActiveProvider } from './contexts/ActiveLinks.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import { GetProvider } from './contexts/getContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ActiveProvider>
-        <App />
-
-      </ActiveProvider>
+    <GetProvider>
+     <App />
+    </GetProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
