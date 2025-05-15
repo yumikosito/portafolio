@@ -8,12 +8,12 @@ const PortfolioCard = (project) => {
   console.log(project);
   
   return (
-    <div >
-      <Container className='' id='portCard'>
-        <Card>
-          <Row>
-            <Col xs={12} sm={8}>
-              <Row className='d-flex flex-column px-4 py-5 m-2'>
+    <div>
+      <Container id='portCard'>
+        <div className='postcard '>
+          <Row >
+            <Col xs={12} md={8}>
+              <Row className='d-flex flex-column px-2 py-5'>
                 <h3 className='portTitle'>{project.title}</h3>
                 <div className='d-flex '>
                   <IoCalendarOutline size={25}/><h6 className='portDate align-items-center mx-2'>{project.date}</h6>
@@ -48,18 +48,15 @@ const PortfolioCard = (project) => {
                    </Col>
                   </Row>
                 </Tab.Container>
- 
-                
-
               </Row>
             </Col >
               
 
-            <Col xs={12} sm={4}>
+            <Col xs={12} md={4}>
             <Image className='portImg' src={project.imgMb}/>
             </Col>
           </Row>
-        </Card>
+        </div>
       </Container>
       
     </div>

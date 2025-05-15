@@ -5,7 +5,7 @@ const ExperienceCard = (experience) => {
   
   return (
     <div >
-      <Container fluid className='my-2 py-4 ps-4' id="eduCard">
+      <Container fluid className='my-2 py-4 ps-4' id="expCard">
         <Card>
           <div className='logoContent rounded-3'>
             <Row className=''>
