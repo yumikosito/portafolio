@@ -3,25 +3,13 @@ import { Button, Card, Col, Container, Image, ListGroup, Overlay, OverlayTrigger
 import { IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
-import { ActiveContext } from '../contexts/ActiveLinks';
 
 const PortfolioCard = (project) => {
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
-
-  const {activeLink,setActiveLink} = useContext(ActiveContext)
-  console.log(project);
-
-  let UpdateActive = (value)=>{
-    setActiveLink(value);
-  }
-  console.log(activeLink);
-  
   
   return (
     <div>
       <Container id='portCard'>
-        <div className='postcard '>
+        <div className='postcard'>
           <Row >
             <Col xs={12} md={7}>
               <Row className='d-flex flex-column px-3 py-4'>
@@ -41,14 +29,12 @@ const PortfolioCard = (project) => {
                 <Row>
 
                     {project.category.details.map((detail,index)=>(
-                      <Col xs={4} className='px-3'>
+                      <Col xs={4} className='px-3' key={index}>
                         <OverlayTrigger
                           key={index}
                           placement='bottom'
                           overlay={  
-                          <Tooltip id={`tooltip-${detail}`}>
-                            {console.log(detail)}
-                            
+                          <Tooltip id={`tooltip-${detail}`}>                       
                             {detail.items.map((item,index)=>(
                               <ListGroup.Item className='portListDetail' key={index}>- {item}</ListGroup.Item>
                             ))}

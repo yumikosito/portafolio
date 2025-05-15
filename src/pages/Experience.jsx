@@ -8,15 +8,6 @@ import { GetContext } from '../contexts/getContext'
 const Experience = () => {
   const {exps} = useContext(GetContext)
 
-  // const getData = async () =>{
-  //    const res = await ExperienceJs()
-  //    setExp(res)
-  // }
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
   
   return (
     <div id='experienceContainer'>

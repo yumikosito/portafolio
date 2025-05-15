@@ -35,14 +35,14 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" >
           <Nav>
-            <Nav.Link as={Link} to='/'>Home</Nav.Link>
-            <NavDropdown title="Sobre mí">
-              <NavDropdown.Item as={Link} to='/skills'>Habilidades</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/education'>Educación</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/certifications'>Certificaciones</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/experience'>Experiencia</NavDropdown.Item>
+            <Nav.Link as={Link} className='navbarText' to='/'>Home</Nav.Link>
+            <NavDropdown title="Sobre mí" className='navbarText'>
+              <NavDropdown.Item as={Link} className='navbarText' to='/skills'>Habilidades</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/education'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/certifications'>Certificaciones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/experience'>Experiencia</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='/portafolio'>Portafolio</Nav.Link>
+            <Nav.Link as={Link} to='/portafolio' className='navbarText'>Portafolio</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito"><Github size={25}/></Nav.Link>
       

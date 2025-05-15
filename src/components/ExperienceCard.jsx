@@ -9,14 +9,12 @@ const ExperienceCard = (experience) => {
         <Card>
           <div className='logoContent rounded-3'>
             <Row className=''>
-                <Col xs={12} sm={4}>
+                <Col xs={12} sm={3}>
                   <Image src={experience.img} />
                 </Col>
-                <Col xs={12} sm={8} className='py-3 px-4'>
-                    <h3>{experience.role}</h3>
-                    <h4>{experience.place}</h4>
-                    <h4>{experience.time}</h4>
-                    
+                <Col xs={12} sm={9} className='d-flex flex-column justify-items-around py-3 px-2'>
+                    <p className='roleText my-1'>{experience.role}</p>
+                    <p className='placeText mb-1'>{experience.place} | {experience.time}</p>
                 </Col>
             </Row>  
           </div>

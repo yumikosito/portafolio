@@ -12,7 +12,7 @@ const Portfolio = () => {
         <Row>
 
         { ports.map((port,index) =>(
-          <Col xs={12} md={6} className='my-5' key={index}>
+          <Col xs={12} lg={6} className='my-5' key={index}>
             <PortfolioCard {...port}/>
           </Col>
         ))}

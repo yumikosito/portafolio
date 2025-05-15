@@ -1,5 +1,5 @@
 const experience =[{
-  img:'/ucchristus.png',
+  img:'/experience/ucchristus.png',
   role:'Nutricionista clínica',
   place: 'Hospital Cínico UC Christus',
   time:'2021 - 2024',

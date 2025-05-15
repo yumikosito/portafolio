@@ -23,8 +23,9 @@ function App() {
       <Skills/>
       <Education/>
       <Certifications/>
-      <Experience/>
+      
       <Portfolio/>
+      <Experience/>
   
  
        
