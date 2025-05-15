@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import PortfolioCard from '../components/PortfolioCard'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { GetContext } from '../contexts/getContext'
 
 const Portfolio = () => {
@@ -9,12 +9,14 @@ const Portfolio = () => {
     <div>
       <Container className='my-2 py-3'>
         <h1>Portfolio</h1>
+        <Row>
+
         { ports.map((port,index) =>(
-          <div className='my-5' key={index}>
+          <Col xs={12} md={6} className='my-5' key={index}>
             <PortfolioCard {...port}/>
-          </div>
-          
+          </Col>
         ))}
+        </Row>
         
       </Container>
     </div>

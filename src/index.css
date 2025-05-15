@@ -1,18 +1,20 @@
 :root {
   --orangeColor: rgb(240, 147, 93);
-  --purpleColor: #6e0858;
-  --skyBlue:#2ebdd6;
+  --purpleColor: #753467;
+  --skyBlue:#89e7f8;
   --whiteColor:#f3f3f3;
-  --greenColor:#9dd158;
+  --greenColor:#86c238;
   --blackColor:#323232;
   --redColor: #b6210d;
   --pinkColor: rgb(250, 237, 234);
   --blueColor: #3345b1;
 }
 
-/* *{
-  color: var(--blackColor);
-} */
+
+a{
+  text-decoration: none;
+  color: #68027c;
+}
 
 /* CSS Navbar */
 #navbarConfig {
@@ -300,20 +302,30 @@
   
   min-width:100%;
   max-width:min-content;
+  height: 20rem;
+  transition: ease-in 0.2s;
+  object-fit: cover;
+  object-position: 19.5% 52%;
 }
 
-.portImg:hover{
-  transform: scale(1.1);
+#portCard .postcard:hover .portImg{
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+
 }
 
 
 .portTitle {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color:var(--purpleColor);
+  font-weight: 600;
 
 }
 
 .portDate {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blackColor);
   
 }
 .bar{
@@ -329,22 +341,67 @@
 
 .portText{
   font-size: 1rem;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 .list-group-item.portListLink{
   width: 13rem;
   background-color: var(--whiteColor);
-  border:none
+  border:none;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .list-group-item.portListAuthor{
   width: 11rem;
-  background-color: var(--greenColor);
-  color: var(--blackColor);
+  background-color: #9c608f;
+  color: var(--whiteColor);
+  font-weight: 600;
   border: none;
+  font-size: 0.8rem;
 }
 
-.portListLink.list-group-item-action:hover{
+.portListLink.list-group-item:hover{
    width: 13rem;
   background-color: var(--greenColor);
+  color: var(--whiteColor);
+}
+
+.portListLink.list-group-item:hover a{
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+
+
+.activeLinkText{
+  font-weight: 700;
+
+}
+.portListDetail{
+  text-align: left;
+}
+
+#portCard .btn-info{
+  background-color: var(--skyBlue);
+  border-color: var(--skyBlue);
+  color: var(--blackColor);
+  font-weight: 600;
+
+}
+#portCard .btn-info:hover{
+  background-color: var(--greenColor);
+  border-color: var(--greenColor);
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  background-color: var(--greenColor);
+  box-shadow: 0 0 0.5rem var(--greenColor);
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 1 !important;
 }
