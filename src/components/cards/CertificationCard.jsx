@@ -20,8 +20,8 @@ const CertificationCard = (certification) => {
        
                 <p className='m-0 p-0 certDate'>{certification.date}</p>
                
-              <Row className='d-flex'>
-                <Col>
+              <Row className='d-flex justify-content-between my-1'>
+                <Col xs={12} xl={8} >
                 <div className='d-flex flex-row justify-content-start'>
                   {certification.companys.active ? 
                   (certification.companys.names.map((item, index) => (      
@@ -32,8 +32,8 @@ const CertificationCard = (certification) => {
                   
                 </div> 
                 </Col>
-                <Col>
-                <Button variant='info' className='d-flex align-items-center px-2 py-1 align-self-end' >
+                <Col xs={12} xl={4} className='align-self-end'>
+                <Button variant='info' className='d-flex align-items-center p-1' >
                   <FcDiploma1 size={22} className='me-1'/>
                   <a href={certification.url} target="_blank" className='certButton'> Certificado</a>
                 </Button>

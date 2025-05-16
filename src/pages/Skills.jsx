@@ -1,13 +1,14 @@
 
-import { Col, Container, ProgressBar, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
-import TechSkills from '../components/TechSkills';
-import LangSkills from '../components/LangSkills';
+import TechSkills from '../components/cards/TechSkills';
+import LangSkills from '../components/cards/LangSkills';
 
 const Skills = () => {
   return (
     <div>
-      <Container>
+      <Container className='my-2 py-3'>
+        <h1>Habilidades</h1>
         <TechSkills/>
         <LangSkills/>
       </Container>

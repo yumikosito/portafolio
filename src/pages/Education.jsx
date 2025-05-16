@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import EducationCard from '../components/EducationCard'
+import EducationCard from '../components/cards/EducationCard'
 import { GetContext } from '../contexts/getContext'
 
 const Education = () => {
@@ -8,7 +8,7 @@ const Education = () => {
   
   return (
     <div>
-      <Container className='my-2 py-3'>
+      <Container className='my-1 py-2'>
         <h1>Educación</h1>
         <Row>
  

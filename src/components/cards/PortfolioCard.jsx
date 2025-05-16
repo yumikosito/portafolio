@@ -24,7 +24,7 @@ const PortfolioCard = (project) => {
                   <ListGroup.Item className='portListLink' ><FiExternalLink size={15}/><a href={project.url} target="_blank"> Visitar página</a></ListGroup.Item>
 
                 </ListGroup>
-                <p className='portText my-2 px-3'>{project.category.resume}</p>
+                <p className='portText my-2 px-3 py-2'>{project.category.resume}</p>
                 
                 <Row>
 

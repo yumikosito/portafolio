@@ -1,12 +1,11 @@
-import React, { useContext } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useEffect } from 'react';
-import { Linkedin, Github, EnvelopeAtFill} from 'react-bootstrap-icons';
-import { ActiveContext } from '../contexts/ActiveLinks';
+import { Linkedin, Github} from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 const NavBar = () => {
@@ -29,7 +28,7 @@ const NavBar = () => {
 
   return (
     <div>
-    <Navbar fixed="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
+    <Navbar fixed="top" collapseOnSelect expand="lg" id='navbarConfig' className={scrolled ?'scrolled':""}>
       <Container fluid>
         {/* <Navbar.Brand href="#home">Millaray Painemil</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
@@ -43,8 +42,8 @@ const NavBar = () => {
               <NavDropdown.Item as={Link} className='navbarText' to='/experience'>Experiencia</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to='/portafolio' className='navbarText'>Portafolio</Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin size={25}/></Nav.Link>
-            <Nav.Link href="https://github.com/yumikosito"><Github size={25}/></Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/" target='_blank'><Linkedin size={25}/></Nav.Link>
+            <Nav.Link href="https://github.com/yumikosito" target='_blank'><Github size={25}/></Nav.Link>
       
 
             {/* <NavDropdown title="Contacto" id="basic-nav-dropdown">

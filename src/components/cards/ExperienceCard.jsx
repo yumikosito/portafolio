@@ -6,13 +6,13 @@ const ExperienceCard = (experience) => {
   return (
     <div >
       <Container fluid className='my-2 py-4 ps-4' id="expCard">
-        <Card style={{backgroundColor: `${experience.color}`}}>
-          <div className='logoContent rounded-3'>
+        <Card >
+          <div className='logoContent rounded-3' style={{backgroundColor: `${experience.color}`}}>
             <Row className=''>
-                <Col xs={12} sm={3}>
+                <Col xs={4} sm={3}>
                   <Image src={experience.img} />
                 </Col>
-                <Col xs={12} sm={9} className='d-flex flex-column justify-items-around py-3 px-2'>
+                <Col xs={8} sm={9} className='d-flex flex-column justify-items-around py-3 px-2'>
                     <p className='roleText my-0 '>{experience.role}</p>
                     <p className='placeText my-0'>{experience.place}</p>
                     <p className='dateText my-0'> {experience.time}</p>

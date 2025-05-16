@@ -1,3 +1,31 @@
+/* Custom Fonts */
+@font-face{
+  font-family: Jersey-Regular;
+  src: url('../src/assets/fonts/Jersey10-Regular.ttf');
+}
+
+@font-face{
+  font-family: Lato-Light-Italic;
+  src: url('../src/assets/fonts/Lato-LightItalic.ttf');
+}
+
+@font-face{
+  font-family: Lato-Light;
+  src: url('../src/assets/fonts/Lato-Light.ttf');
+}
+
+@font-face{
+  font-family: Lato-Regular;
+  src: url('../src/assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face{
+  font-family: Lato-Bold-Italic;
+  src: url('../src/assets/fonts/Lato-BoldItalic.ttf');
+}
+
+
+
 :root {
   --orangeColor: rgb(240, 147, 93);
   --purpleColor: #753467;
@@ -16,9 +44,29 @@
 }
 
 
+
 a{
   text-decoration: none;
   color: #68027c;
+}
+
+h1{
+  font-family: 'Lato-Bold-Italic';
+  text-decoration: underline wavy var(--pinkColor);
+  text-decoration-thickness: 1.5px;
+  color: var(--purpleColor);
+}
+
+h2{
+  font-family: 'Lato-Bold-Italic';
+  font-weight: 300;
+  color: var(--greenColor);
+}
+
+h3{
+  font-family: 'Lato-Light-Italic';
+  font-weight: 600;
+  color: var(--pinkColor);
 }
 
 /* CSS Navbar */
@@ -27,27 +75,8 @@ a{
   font-size: 1.3rem;
   font-weight: 600;
   transition: 0.32s ease-in;
-}
 
-
-.nav-link{
-  color: var(--whiteColor);
-  text-decoration: none
-}
-.nav-link:hover{
-  animation: tada;
-  animation-duration: 1.5s;
-  color: var(--greenColor);
-}
-
-.navbar.scrolled {
-  padding: 0.3rem 0;
-  background-color: transparent;
-  transition: 0.32s ease-in-out;
-  background-color: var(--orangeColor) !important;
-}
-
-.bi-linkedin:hover {
+  .bi-linkedin:hover {
   width: 28px;
   height: 28px;
   animation: tada;
@@ -63,8 +92,61 @@ a{
   color: var(--purpleColor);
 }
 
+ .dropdown-toggle.show.nav-link{
+  color: var(--greenColor);
+}
+ .dropdown-menu.show{
+  border: var(--greenColor) 1px solid;
+  background-color:  rgba(78, 78, 78, 0.7);;
+
+}
+.navbar-toggler{
+  background-color:rgba(78, 78, 78, 0.3);;
+  border:none;
+
+  &:focus{
+    color: rgba(78, 78, 78, 0.4);
+    border: none;
+  }
+}
+  .navbar-toggler-icon{
+   background-image: url('./assets/img/hamb-icon.png');
+  }
 
 
+ .dropdown-item{
+  font-family: 'Lato-Regular';
+  font-weight: 500;
+  color: var(--whiteColor);
+  font-weight: 500;
+
+    &:hover {
+      background-color: var(--greenColor);
+      color: var(--whiteColor);
+    }
+  }
+
+  .nav-link{
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-family: 'Lato-Regular';
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .nav-link:hover{
+    animation: tada;
+    animation-duration: 1.5s;
+    color: var(--greenColor);
+  }
+}
+
+
+.navbar.scrolled {
+  padding: 0.3rem 0;
+  background-color: transparent;
+  transition: 0.32s ease-in-out;
+  background-color: var(--orangeColor) !important;
+}
 
 /* CSS header */
 
@@ -77,6 +159,12 @@ a{
   background-repeat: no-repeat;
 }
 
+.devText{
+  font-family: 'Jersey-Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  color: var(--orangeColor);
+}
+
 .photoHeader {
   width:15rem;
   height: 15rem;
@@ -86,139 +174,219 @@ a{
   background: rgba(233, 233, 233, 0.8);
   margin: auto;
 }
+
+.nameText{
+  font-family: 'Lato-Bold-Italic';
+  font-size: 2.5rem;
+
+}
 .tagline {
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--blackColor);
   text-align: start;
+  font-family: 'Lato-Light-Italic';
 }
 .headerSubtext{
   font-weight: 550;
   color: var(--blackColor);
+  font-family: 'Lato-Light-Italic';
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 /* CSS Footer */
 
 #footer {
   background-color: var(--orangeColor);
+
+  .footerText{
+    font-size: 1.3rem;
+  }
 }
-.footerText{
-  font-size: 1.3rem;
-}
+
 
 
 /* CSS Skills */
 #techSkills{
-.animatedIconBootstrap:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #701ddd !important;
+.animatedIconBootstrap{
+  color: var(--blackColor);
+
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #701ddd;
+  }
 }
 
-.animatedIconHTML:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #df6b0c;
+.animatedIconHTML{
+  color: var(--blackColor);
+  
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #df6b0c;
+  }
 }
 
-.animatedIconCSS:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #2e6aec;
+.animatedIconCSS{
+  color: var(--blackColor);
+
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #2e6aec;
+  }
 }
 
-.animatedIconReact:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #27bce9;
+.animatedIconReact{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #27bce9;
+  }
 }
 
-.animatedIconJavascript:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #f1df39;
+.animatedIconJavascript{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #f1df39;
+  }
 }
 
-.animatedIconReactB:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #27bce9;
+.animatedIconReactB{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #27bce9;
+  }
 }
 
-.animatedIconWordpress:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #0691e2;
+.animatedIconWordpress{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #0691e2;
+  }
 }
 
-.animatedIconAxios:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #68027c;
+.animatedIconAxios{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #68027c;
+  }
 }
 
-.animatedIconNode:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #82ca47;
+.animatedIconNode{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #82ca47;
+  }
+}
+.animatedIconExpress{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #afafaf;
+  }
 }
 
-.animatedIconExpress:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #afafaf;
-}
-.animatedIconJest:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #d84a31;
+
+.animatedIconJest{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #d84a31;
+  }
 }
 
-.animatedIconPostgreSQL:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #4770c7;
+.animatedIconPostgreSQL{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #4770c7;
+  }
 }
 
-.animatedIconMicrosoft:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #e95d0b;
+.animatedIconMicrosoft{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #e95d0b;
+  }
 }
 
-.animatedIconPhotoshop:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #311b92;
+.animatedIconPhotoshop{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #311b92;
+  }
 }
 
-.animatedIconGit:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #ec5813;
-}
-.animatedIconGithub:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #7d18f0;
+.animatedIconGit{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #ec5813;
+  }
 }
 
-.animatedIconFigma:hover{
-  animation: flash;
-  animation-duration: 1.5s;
-  color: #50db8a;
+.animatedIconGithub{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #7d18f0;
+  }
+}
+
+.animatedIconFigma{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #50db8a;
+  }
 }
 
 
 .iconTextTech{
   font-size: 1.5rem;
   text-align: justify;
+  font-family: 'Lato-Light';
+  font-weight: 600;
+  color: var(--blackColor);
+}
+
+hr{
+  width: 50%;
+  align-items: center;
+  border: var(--greenColor) 0.3rem solid;
+  margin: 1rem auto;
 }
 }
 /* CSS Languages */
 
 #langCard{
 .langText {
+  color: var(--blackColor);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -264,7 +432,7 @@ a{
 
 .card {
   position: relative;
-  border: white 1px;
+  border: none;
   transition : 0.3s ease-in-out;
 }
 
@@ -284,29 +452,26 @@ a{
 
 .card .content {
   position : relative;
+  padding: 4rem 0.8rem 0.8rem 0.8rem;
   top : -150px;
-  color : #2b2b2b;
+  color: var(--blackColor);
   left: +50px;
   font-size: 1rem;
   text-align: justify;
   visibility : hidden;
   opacity : 0;
   transition : 0.3s ease-in-out;
+  background-color : var(--pastelYellow);
+   border: none;
     
 }
 
  .card:hover .content {
    margin-top : 4rem;
-   padding: 4rem 0.8rem 0.8rem 0.8rem;
    left: +50px;
    visibility : visible;
    opacity : 1;
    transition-delay: 0.2s;
-   background-color : var(--pastelYellow);
-   border: none;
-   color: var(--blackColor);
-   font-weight: 500;
-   text-align: justify;
 }
 }
 /* CSS portfolio */
@@ -426,15 +591,18 @@ a{
   opacity: 1;
 }
 
+
+
+}
 .tooltip-inner {
-  background-color: var(--pastelGreen !important);
+  background-color: var(--pastelGreen) !important;
   box-shadow: 0 0 0.5rem var(--pastelGreen);
   color: var(--blackColor);
   font-weight: 600;
   font-size: 0.9rem;
   opacity: 1 !important;
-}
-
+  text-align: left;
+  padding: 0.5rem 0.4rem;
 }
 /* CSS Education */
 
@@ -543,10 +711,18 @@ a{
   color: var(--blackColor);
     font-weight: 600;
     font-size: 1.2rem;
-    text-decoration: var(--greenColor) wavy underline;
   }
   .accordion-button:not(.collapsed){
     background-color: var(--pinkColor);
     color: var(--whiteColor);
-    text-decoration: var(--pastelGreen) wavy underline;
   }
+
+  .accordion-item{
+    border: var(--pinkColor) 0.1rem solid;
+
+  }
+
+  .accordion-item.accordion-active .active{
+    color: #06e248;
+  }
+  

@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import PortfolioCard from '../components/PortfolioCard'
+import { useContext } from 'react'
+import PortfolioCard from '../components/cards/PortfolioCard'
 import { Col, Container, Row } from 'react-bootstrap'
 import { GetContext } from '../contexts/getContext'
 
@@ -7,7 +7,7 @@ const Portfolio = () => {
   const { ports } = useContext(GetContext)
   return (
     <div>
-      <Container className='my-2 py-3'>
+      <Container className='mt-2 py-2'>
         <h1>Portfolio</h1>
         <Row>
 

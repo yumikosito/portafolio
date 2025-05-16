@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/header-img.png'
+import headerImg from '../../assets/img/header-img.png'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <section className='banner' id='header'>
       <Container className='pt-4'>
-      <div className='headerBackground p-4'>
+      <div className='headerBackground rounded-3 p-4'>
         <Row className=' flex justify-content-end align-items-center'>
         
           <Col xs={12} md={8} xl={7}>
@@ -64,7 +64,7 @@ const Header = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn":""}>
                 
                 <span className='tagline px-3'>Bienvenid@ a mi portafolio</span>
-                <h1 className='px-3'>{`Soy Millaray Painemil `}<br /><span className='txt-rotate px-3'><span className='wrap'>{text}</span></span></h1>
+                <p className='px-3 nameText'>{`Soy Millaray Painemil Herrera`}<br /><span className='devText px-1'><span className='wrap'>{text}</span></span></p>
                 <p className='headerSubtext px-3'>Profesional motivada y expectante de profundizar día a día en el área de la programación. Tengo una gran preocupación de entregar resultados sobresalientes en las tareas que se me encomienden. Además de desafiarme constantemente, con tal de aprender nuevas herramientas profesionales y personales.</p>
               </div>
         
