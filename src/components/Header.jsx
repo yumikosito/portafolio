@@ -51,10 +51,10 @@ const Header = () => {
 
 
   return (
-    <section className='banner' id='home'>
-      <Container>
-      <div className='headerBackground  p-4'>
-        <Row className='align-items-center'>
+    <section className='banner' id='header'>
+      <Container className='pt-4'>
+      <div className='headerBackground p-4'>
+        <Row className=' flex justify-content-end align-items-center'>
         
           <Col xs={12} md={8} xl={7}>
     
@@ -72,7 +72,7 @@ const Header = () => {
             }
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={4} xl={5}>
+          <Col xs={12} md={4} xl={5} className='d-flex justify-content-center align-items-center'>
             <TrackVisibility>
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>

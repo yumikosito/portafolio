@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
-  let {activeLink,setActiveLink} = useContext(ActiveContext);
 
   const [scrolled,setScrolled]=useState(false);
 
@@ -26,25 +25,24 @@ const NavBar = () => {
     return ()=>window.removeEventListener('scroll',onScroll)
   },[])
 
-  const onUpdateActiveLink = (value)=>{
-    setActiveLink(value);
-  }
+
 
   return (
     <div>
-    <Navbar expand="lg" sticky="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
+    <Navbar fixed="top" id='navbarConfig' className={scrolled ?'scrolled':""}>
       <Container fluid>
         {/* <Navbar.Brand href="#home">Millaray Painemil</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" >
           <Nav>
-            <Nav.Link as={Link} to='/'>Home</Nav.Link>
-            <NavDropdown title="Sobre mí">
-              <NavDropdown.Item href="#skills">Habilidades</NavDropdown.Item>
-              <NavDropdown.Item href="#education">Educación</NavDropdown.Item>
-              <NavDropdown.Item href="#experience">Experiencia</NavDropdown.Item>
+            <Nav.Link as={Link} className='navbarText' to='/'>Home</Nav.Link>
+            <NavDropdown title="Sobre mí" className='navbarText'>
+              <NavDropdown.Item as={Link} className='navbarText' to='/skills'>Habilidades</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/education'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/certifications'>Certificaciones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className='navbarText' to='/experience'>Experiencia</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#portfolio">Portafolio</Nav.Link>
+            <Nav.Link as={Link} to='/portafolio' className='navbarText'>Portafolio</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito"><Github size={25}/></Nav.Link>
       
