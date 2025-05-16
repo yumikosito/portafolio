@@ -51,7 +51,7 @@ const Header = () => {
 
 
   return (
-    <section className='banner' id='home'>
+    <section className='banner' id='header'>
       <Container className='pt-4'>
       <div className='headerBackground p-4'>
         <Row className=' flex justify-content-end align-items-center'>

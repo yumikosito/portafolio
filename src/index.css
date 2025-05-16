@@ -66,6 +66,7 @@ a{
 
 
 /* CSS header */
+
 .banner {
   margin-top: 0;
   padding: 5rem 0 2rem 0;
@@ -106,6 +107,7 @@ a{
 
 
 /* CSS Skills */
+#techSkills{
 .animatedIconBootstrap:hover{
   animation: flash;
   animation-duration: 1.5s;
@@ -211,9 +213,10 @@ a{
   font-size: 1.5rem;
   text-align: justify;
 }
-
+}
 /* CSS Languages */
 
+#langCard{
 .langText {
   text-align: center;
   font-size: 1.5rem;
@@ -238,38 +241,38 @@ a{
 .japaneseProg .progress-bar.progress-bar-striped.progress-bar-animated{
   background-color: var(--skyBlue);
 }
-
+}
 /* CSS experience */
 
-#expCard img{
+
+#expCard {
+ position : relative;
+
+  img{
   width: 100%;
   height: 100%;
   border-radius: 5%;
-}
-
-#expCard {
-  position : relative;
-}
-#expCard .roleText{
+  }
+ .roleText{
   font-size: 1.3rem;
 }
-#expCard .placeText,.timeText{
+ .placeText,.timeText{
   font-size: 1.2rem;
 }
 
 
-#expCard .card {
+.card {
   position: relative;
   border: white 1px;
   transition : 0.3s ease-in-out;
 }
 
-#expCard .card:hover {
+.card:hover {
   top : -10%;
   height : 20rem;    
 }
 
-#expCard .card .logoContent {
+.card .logoContent {
   position : relative;
   top : -10%;
   z-index : 1;
@@ -279,7 +282,7 @@ a{
   border-radius: 5%;
 }
 
-#expCard .card .content {
+.card .content {
   position : relative;
   top : -150px;
   color : #2b2b2b;
@@ -292,7 +295,7 @@ a{
     
 }
 
-#expCard  .card:hover .content {
+ .card:hover .content {
    margin-top : 4rem;
    padding: 4rem 0.8rem 0.8rem 0.8rem;
    left: +50px;
@@ -304,10 +307,12 @@ a{
    color: var(--blackColor);
    font-weight: 500;
 }
-
+}
 /* CSS portfolio */
 
-#portCard .postcard{
+#portCard{
+
+.postcard{
   background-color: var(--pinkColor);
   box-shadow:0 0.3rem 2rem rgba(160, 146, 142, 0.5) ;
   border: none;
@@ -317,7 +322,7 @@ a{
 }
 
 
-#portCard .postcard .portImg{
+.postcard .portImg{
   width:100%;
   height: 100%;
   border-radius: 5%;
@@ -330,7 +335,7 @@ a{
   object-position: 19.5% 52%;
 }
 
-#portCard .postcard:hover .portImg{
+.postcard:hover .portImg{
   transform: scale(1.1);
   transition: ease-in-out 0.2s;
 
@@ -357,7 +362,7 @@ a{
   transition: width 0.2s ease;
 }
 
-#portCard .postcard:hover .bar{
+ .postcard:hover .bar{
   width: 10rem;
 }
 
@@ -402,14 +407,14 @@ a{
   text-align: left;
 }
 
-#portCard .btn-info{
+.btn-info{
   background-color: var(--skyBlue);
   border-color: var(--skyBlue);
   color: var(--blackColor);
   font-weight: 600;
 
 }
-#portCard .btn-info:hover{
+.btn-info:hover{
   background-color: var(--pastelGreen);
   border-color: var(--pastelGreen);
   color: var(--blackColor);
@@ -429,35 +434,36 @@ a{
   opacity: 1 !important;
 }
 
+}
 /* CSS Education */
 
 #eduCard {
   box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
   border: none;
   border-radius: 5%;
-}
 
-#eduCard:hover {
+
+&:hover {
   animation: pulse; 
   animation-duration: 1s;
 }
 
-#eduCard .eduImg {
+ .eduImg {
   width: auto;
   height: 6rem;
 }
 
-#eduCard .eduTitle {
+ .eduTitle {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--blackColor);
 }
 
-#eduCard .eduPlaceTime{
+.eduPlaceTime{
   font-size: 1rem;
 }
 
-#eduCard .dropdown-toggle.btn-secondary.btn-sm {
+.dropdown-toggle.btn-secondary.btn-sm {
   background-color: var(--pastelPurple);
   border: none;
   font-weight: 600;
@@ -465,22 +471,70 @@ a{
 
 }
 
-#eduCard .dropdown-menu.show {
+ .dropdown-menu.show {
   color: var(--blackColor);
   border: var(--pastelPurple) 2px solid;
  
 }
 
-#eduCard .dropdown-item:hover {
+ .dropdown-item:hover {
   font-weight: 700;
   color: var(--purpleColor);
   background-color: #faeff9;
 }
 
-
+}
 /* CSS Certifications */
 
-#certCard .certImg {
-  width: 10rem;
-  height: auto;
+#certCard{
+
+  .certImg {
+    width: 100%;
+    height:fit-content;
+  }
+
+  .certContent{
+    height: 100%;
+    box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+    border: none;
+    border-radius: 5%;
+    background-color: var(--pastelBlue);
+  }
+  
+  .certTitle {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .btn-info{
+  background-color: var(--purpleColor);
+  border-color: var(--purpleColor);
+  color: var(--whiteColor);
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  }
+  .btn-info:hover{
+    background-color: var(--pastelPurple);
+    border-color: var(--pastelPurple);
+    font-weight: 600;
+  }
+
+  .certDate {
+    font-size: 0.95rem;
+  }
+  .certPCompany{
+    font-size: 0.95rem;
+  }
+
+  .certCompany{
+    background-color: var(--skyBlue);
+    font-weight: 550;
+    font-size: 0.8rem;
+    border-radius: 35% 13%;
+  }
+
+  .certButton{
+    color: var(--whiteColor);
+  }
 }

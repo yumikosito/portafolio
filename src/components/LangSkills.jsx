@@ -3,7 +3,7 @@ import { Col, Container, ProgressBar, Row } from 'react-bootstrap'
 const LangSkills = () => {
   return (
     <div>
-    <Container className='my-2 py-3'>
+    <Container className='my-2 py-3' id="langCard">
       <h1>Idiomas</h1>
       <Row className='d-flex justify-content-between align-items-center my-2 py-2 ps-4'>
         <Col xs={4} sm={3} md={3} className='spanishProg '>
