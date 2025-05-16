@@ -68,10 +68,8 @@ nav.navbar.scrolled {
 .headerSubtext{
   font-weight: 550;
   color: var(--blackColor);
-<<<<<<< Updated upstream
 }
-=======
-}
+
 
 /* CSS Footer */
 
@@ -513,17 +511,4 @@ nav.navbar.scrolled {
   .certButton{
     color: var(--whiteColor);
   }
- 
 }
- .accordion-button{
-  color: var(--blackColor);
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-decoration: var(--greenColor) wavy underline;
-  }
-  .accordion-button:not(.collapsed){
-    background-color: var(--pastelPurple);
-    color: var(--whiteColor);
-    text-decoration: var(--pastelGreen) wavy underline;
-  }
->>>>>>> Stashed changes
