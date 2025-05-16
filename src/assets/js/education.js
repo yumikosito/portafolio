@@ -2,7 +2,7 @@ const education =[{
   img:'/education/ADL.png',
   degree:'Desarrollador Full Stack JavaScript',
   place: 'Academia DesafíoLatam',
-  time:'2024 - 2025',
+  date:'2024 - 2025',
   color:'#e5f8cc',
   certs: {
     active:true,
@@ -14,7 +14,7 @@ const education =[{
   img:'/education/ADL.png',
   degree:'Desarrollador Backend',
   place: 'Academia DesafíoLatam',
-  time:'2024-2025',
+  date:'2024-2025',
   color:'#e5f8cc',
   certs: {
     active:true,
@@ -27,7 +27,7 @@ const education =[{
   img:'/education/ADL.png',
   degree:'Desarrollador Frontend',
   place: 'Academia DesafíoLatam',
-  time:'2024',
+  date:'2024',
   color:'#e5f8cc',
   certs: {
     active:true,
@@ -43,7 +43,7 @@ const education =[{
   img:'/education/Utokyo.png',
   degree:'Intercambio académico',
   place: 'Universidad de Tokio',
-  time:'2019 - 2020',
+  date:'2019 - 2020',
   color:'#f9facd',
   certs: {
     active:false
@@ -52,7 +52,7 @@ const education =[{
   img:'/education/PUC.png',
   degree:'Nutrición y dietética',
   place: 'Pontificia Universidad Católica de Chile',
-  time:'2015 - 2020',
+  date:'2015 - 2020',
   color:'#e0ecfd',
   certs: {
     active:false

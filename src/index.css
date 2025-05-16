@@ -3,12 +3,12 @@
   --purpleColor: #753467;
   --skyBlue:#89e7f8;
   --whiteColor:#f3f3f3;
-  --greenColor:#86c238;
+  --greenColor:#6ab10e;
   --blackColor:#494949;
   --redColor: #b6210d;
   --pinkColor: rgb(250, 237, 234);
   --blueColor: #3345b1;
-  --pastelGreen:#c6e67d; 
+  --pastelGreen:#d1ec93; 
   --pastelYellow:#f9facd;
   --pastelBlue: #e0ecfd;
   --pastelPurple: #9c608f;
@@ -219,8 +219,16 @@ a{
   font-size: 1.5rem;
 }
 
+.spanishProg,.englishProg,.japaneseProg {
+  font-weight: 600;
+}
+
+.spanishProg:hover, .englishProg:hover, .japaneseProg:hover {
+  animation: headShake;
+  animation-duration: 2s;
+}
 .spanishProg .progress-bar.progress-bar-striped.progress-bar-animated{
-  background-color: var(--greenColor);
+  background-color: var(--pastelPurple);
 }
 
 .englishProg .progress-bar.progress-bar-striped.progress-bar-animated{
@@ -286,13 +294,15 @@ a{
 
 #expCard  .card:hover .content {
    margin-top : 4rem;
-   padding-top: 4rem;
+   padding: 4rem 0.8rem 0.8rem 0.8rem;
    left: +50px;
    visibility : visible;
    opacity : 1;
    transition-delay: 0.2s;
    background-color : var(--pastelGreen);
    border: none;
+   color: var(--blackColor);
+   font-weight: 500;
 }
 
 /* CSS portfolio */
@@ -305,6 +315,7 @@ a{
   height: fit-content;
   width: fit-content;
 }
+
 
 #portCard .postcard .portImg{
   width:100%;
@@ -421,12 +432,16 @@ a{
 /* CSS Education */
 
 #eduCard {
-
   box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
   border: none;
   border-radius: 5%;
-
 }
+
+#eduCard:hover {
+  animation: pulse; 
+  animation-duration: 1s;
+}
+
 #eduCard .eduImg {
   width: auto;
   height: 6rem;
@@ -446,15 +461,26 @@ a{
   background-color: var(--pastelPurple);
   border: none;
   font-weight: 600;
+  transition : 0.3s ease-in-out;
+
 }
 
 #eduCard .dropdown-menu.show {
   color: var(--blackColor);
   border: var(--pastelPurple) 2px solid;
+ 
 }
 
 #eduCard .dropdown-item:hover {
   font-weight: 700;
   color: var(--purpleColor);
   background-color: #faeff9;
+}
+
+
+/* CSS Certifications */
+
+#certCard .certImg {
+  width: 10rem;
+  height: auto;
 }

@@ -17,7 +17,7 @@ const EducationCard = (education) => {
               <p className='eduTitle my-1'>{education.degree}</p>
               <Col xs={education.certs.active ? '8': '12'}>
                  <p className='eduPlaceTime mb-1'>{education.place}<br/>
-                 {education.time}</p>
+                 {education.date}</p>
                 
               </Col>
               
