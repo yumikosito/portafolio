@@ -68,4 +68,462 @@ nav.navbar.scrolled {
 .headerSubtext{
   font-weight: 550;
   color: var(--blackColor);
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* CSS Footer */
+
+#footer {
+  background-color: var(--orangeColor);
+}
+.footerText{
+  font-size: 1.3rem;
+}
+
+
+/* CSS Skills */
+#techSkills{
+.animatedIconBootstrap:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #701ddd !important;
+}
+
+.animatedIconHTML:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #df6b0c;
+}
+
+.animatedIconCSS:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #2e6aec;
+}
+
+.animatedIconReact:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #27bce9;
+}
+
+.animatedIconJavascript:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #f1df39;
+}
+
+.animatedIconReactB:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #27bce9;
+}
+
+.animatedIconWordpress:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #0691e2;
+}
+
+.animatedIconAxios:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #68027c;
+}
+
+.animatedIconNode:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #82ca47;
+}
+
+.animatedIconExpress:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #afafaf;
+}
+.animatedIconJest:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #d84a31;
+}
+
+.animatedIconPostgreSQL:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #4770c7;
+}
+
+.animatedIconMicrosoft:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #e95d0b;
+}
+
+.animatedIconPhotoshop:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #311b92;
+}
+
+.animatedIconGit:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #ec5813;
+}
+.animatedIconGithub:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #7d18f0;
+}
+
+.animatedIconFigma:hover{
+  animation: flash;
+  animation-duration: 1.5s;
+  color: #50db8a;
+}
+
+
+.iconTextTech{
+  font-size: 1.5rem;
+  text-align: justify;
+}
+}
+/* CSS Languages */
+
+#langCard{
+.langText {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.spanishProg,.englishProg,.japaneseProg {
+  font-weight: 600;
+}
+
+.spanishProg:hover, .englishProg:hover, .japaneseProg:hover {
+  animation: headShake;
+  animation-duration: 2s;
+}
+.spanishProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--pastelPurple);
+}
+
+.englishProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--orangeColor);
+}
+
+.japaneseProg .progress-bar.progress-bar-striped.progress-bar-animated{
+  background-color: var(--skyBlue);
+}
+}
+/* CSS experience */
+
+
+#expCard {
+ position : relative;
+
+  img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  }
+ .roleText{
+  font-size: 1.3rem;
+}
+ .placeText,.timeText{
+  font-size: 1.2rem;
+}
+
+
+.card {
+  position: relative;
+  border: white 1px;
+  transition : 0.3s ease-in-out;
+}
+
+.card:hover {
+  top : -10%;
+  height : 20rem;    
+}
+
+.card .logoContent {
+  position : relative;
+  top : -10%;
+  z-index : 1;
+  background-color: var(--pinkColor);
+  box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+  border: none;
+  border-radius: 5%;
+}
+
+.card .content {
+  position : relative;
+  top : -150px;
+  color : #2b2b2b;
+  left: +50px;
+  font-size: 1.1rem;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+ .card:hover .content {
+   margin-top : 4rem;
+   padding: 4rem 0.8rem 0.8rem 0.8rem;
+   left: +50px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+   background-color : var(--pastelGreen);
+   border: none;
+   color: var(--blackColor);
+   font-weight: 500;
+}
+}
+/* CSS portfolio */
+
+#portCard{
+
+.postcard{
+  background-color: var(--pinkColor);
+  box-shadow:0 0.3rem 2rem rgba(160, 146, 142, 0.5) ;
+  border: none;
+  border-radius: 5%;
+  height: fit-content;
+  width: fit-content;
+}
+
+
+.postcard .portImg{
+  width:100%;
+  height: 100%;
+  border-radius: 5%;
+  
+  min-width:100%;
+  max-width:min-content;
+  height: 20rem;
+  transition: ease-in 0.2s;
+  object-fit: cover;
+  object-position: 19.5% 52%;
+}
+
+.postcard:hover .portImg{
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+
+}
+
+
+.portTitle {
+  font-size: 1.4rem;
+  color:var(--purpleColor);
+  font-weight: 600;
+
+}
+
+.portDate {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blackColor);
+  
+}
+.bar{
+  width: 5rem;
+  height: 0.5rem;
+  background-color: var(--orangeColor);
+  transition: width 0.2s ease;
+}
+
+ .postcard:hover .bar{
+  width: 10rem;
+}
+
+.portText{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.list-group-item.portListLink{
+  width: 13rem;
+  background-color: var(--whiteColor);
+  border:none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.list-group-item.portListAuthor{
+  width: 11rem;
+  background-color: var(--pastelPurple);
+  color: var(--whiteColor);
+  font-weight: 600;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.portListLink.list-group-item:hover{
+   width: 13rem;
+  background-color: var(--pastelGreen);
+  color: var(--blackColor);
+}
+
+.portListLink.list-group-item:hover a{
+  color: var(--blackColor);
+  font-weight: 700;
+}
+
+
+.activeLinkText{
+  font-weight: 700;
+
+}
+.portListDetail{
+  text-align: left;
+}
+
+.btn-info{
+  background-color: var(--skyBlue);
+  border-color: var(--skyBlue);
+  color: var(--blackColor);
+  font-weight: 600;
+
+}
+.btn-info:hover{
+  background-color: var(--pastelGreen);
+  border-color: var(--pastelGreen);
+  color: var(--blackColor);
+  font-weight: 600;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  background-color: var(--pastelGreen);
+  box-shadow: 0 0 0.5rem var(--pastelGreen);
+  color: var(--blackColor);
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 1 !important;
+}
+
+}
+/* CSS Education */
+
+#eduCard {
+  box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+  border: none;
+  border-radius: 5%;
+
+
+&:hover {
+  animation: pulse; 
+  animation-duration: 1s;
+}
+
+ .eduImg {
+  width: auto;
+  height: 6rem;
+}
+
+ .eduTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--blackColor);
+}
+
+.eduPlaceTime{
+  font-size: 1rem;
+}
+
+.dropdown-toggle.btn-secondary.btn-sm {
+  background-color: var(--pastelPurple);
+  border: none;
+  font-weight: 600;
+  transition : 0.3s ease-in-out;
+
+}
+
+ .dropdown-menu.show {
+  color: var(--blackColor);
+  border: var(--pastelPurple) 2px solid;
+ 
+}
+
+ .dropdown-item:hover {
+  font-weight: 700;
+  color: var(--purpleColor);
+  background-color: #faeff9;
+}
+
+}
+/* CSS Certifications */
+
+#certCard{
+
+  .certImg {
+    width: 100%;
+    height:fit-content;
+  }
+
+  .certContent{
+    height: 100%;
+    box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+    border: none;
+    border-radius: 5%;
+  }
+  
+  .certTitle {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .btn-info{
+  background-color: var(--purpleColor);
+  border-color: var(--purpleColor);
+  color: var(--whiteColor);
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  }
+  .btn-info:hover{
+    background-color: var(--pastelPurple);
+    border-color: var(--pastelPurple);
+    font-weight: 600;
+  }
+
+  .certDate {
+    font-size: 0.95rem;
+  }
+  .certPCompany{
+    font-size: 0.95rem;
+  }
+
+  .certCompany{
+    background-color: var(--skyBlue);
+    font-weight: 550;
+    font-size: 0.8rem;
+    border-radius: 35% 13%;
+  }
+
+  .certButton{
+    color: var(--whiteColor);
+  }
+ 
+}
+ .accordion-button{
+  color: var(--blackColor);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: var(--greenColor) wavy underline;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: var(--pastelPurple);
+    color: var(--whiteColor);
+    text-decoration: var(--pastelGreen) wavy underline;
+  }
+>>>>>>> Stashed changes
