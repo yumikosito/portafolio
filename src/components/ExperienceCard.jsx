@@ -6,15 +6,16 @@ const ExperienceCard = (experience) => {
   return (
     <div >
       <Container fluid className='my-2 py-4 ps-4' id="expCard">
-        <Card>
+        <Card style={{backgroundColor: `${experience.color}`}}>
           <div className='logoContent rounded-3'>
             <Row className=''>
                 <Col xs={12} sm={3}>
                   <Image src={experience.img} />
                 </Col>
                 <Col xs={12} sm={9} className='d-flex flex-column justify-items-around py-3 px-2'>
-                    <p className='roleText my-1'>{experience.role}</p>
-                    <p className='placeText mb-1'>{experience.place} | {experience.time}</p>
+                    <p className='roleText my-0 '>{experience.role}</p>
+                    <p className='placeText my-0'>{experience.place}</p>
+                    <p className='dateText my-0'> {experience.time}</p>
                 </Col>
             </Row>  
           </div>
@@ -22,7 +23,7 @@ const ExperienceCard = (experience) => {
             
             <div className= "content rounded-3">
               {experience.tasks.map((task,index)=>(
-                <p className='px-4' key={index}>
+                <p className='px-4 my-1' key={index}>
                 {task}
                 </p>
               ))}

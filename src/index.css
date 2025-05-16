@@ -6,12 +6,13 @@
   --greenColor:#6ab10e;
   --blackColor:#494949;
   --redColor: #b6210d;
-  --pinkColor: rgb(250, 237, 234);
+  --pastelPink: rgb(250, 237, 234);
   --blueColor: #3345b1;
   --pastelGreen:#d1ec93; 
   --pastelYellow:#f9facd;
   --pastelBlue: #e0ecfd;
   --pastelPurple: #9c608f;
+  --pinkColor: #e27193;
 }
 
 
@@ -231,7 +232,7 @@ a{
   animation-duration: 2s;
 }
 .spanishProg .progress-bar.progress-bar-striped.progress-bar-animated{
-  background-color: var(--pastelPurple);
+  background-color: var(--pinkColor);
 }
 
 .englishProg .progress-bar.progress-bar-striped.progress-bar-animated{
@@ -276,7 +277,6 @@ a{
   position : relative;
   top : -10%;
   z-index : 1;
-  background-color: var(--pinkColor);
   box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
   border: none;
   border-radius: 5%;
@@ -287,8 +287,8 @@ a{
   top : -150px;
   color : #2b2b2b;
   left: +50px;
-  font-size: 1.1rem;
-  
+  font-size: 1rem;
+  text-align: justify;
   visibility : hidden;
   opacity : 0;
   transition : 0.3s ease-in-out;
@@ -302,10 +302,11 @@ a{
    visibility : visible;
    opacity : 1;
    transition-delay: 0.2s;
-   background-color : var(--pastelGreen);
+   background-color : var(--pastelYellow);
    border: none;
    color: var(--blackColor);
    font-weight: 500;
+   text-align: justify;
 }
 }
 /* CSS portfolio */
@@ -313,7 +314,7 @@ a{
 #portCard{
 
 .postcard{
-  background-color: var(--pinkColor);
+  background-color: var(--pastelPink);
   box-shadow:0 0.3rem 2rem rgba(160, 146, 142, 0.5) ;
   border: none;
   border-radius: 5%;
@@ -426,7 +427,7 @@ a{
 }
 
 .tooltip-inner {
-  background-color: var(--pastelGreen);
+  background-color: var(--pastelGreen !important);
   box-shadow: 0 0 0.5rem var(--pastelGreen);
   color: var(--blackColor);
   font-weight: 600;
@@ -545,7 +546,7 @@ a{
     text-decoration: var(--greenColor) wavy underline;
   }
   .accordion-button:not(.collapsed){
-    background-color: var(--pastelPurple);
+    background-color: var(--pinkColor);
     color: var(--whiteColor);
     text-decoration: var(--pastelGreen) wavy underline;
   }
