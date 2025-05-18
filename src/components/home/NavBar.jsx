@@ -4,8 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useEffect } from 'react';
 import { Linkedin, Github} from 'react-bootstrap-icons';
-import { Link } from 'react-router-dom';
-import { RxHamburgerMenu } from "react-icons/rx";
+import { NavHashLink } from 'react-router-hash-link';
 
 
 const NavBar = () => {
@@ -34,22 +33,17 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" >
           <Nav>
-            <Nav.Link as={Link} className='navbarText' to='/'>Home</Nav.Link>
+            <Nav.Link as={NavHashLink} className='navbarText' to='#header'>Home</Nav.Link>
             <NavDropdown title="Sobre mí" className='navbarText'>
-              <NavDropdown.Item as={Link} className='navbarText' to='/skills'>Habilidades</NavDropdown.Item>
-              <NavDropdown.Item as={Link} className='navbarText' to='/education'>Educación</NavDropdown.Item>
-              <NavDropdown.Item as={Link} className='navbarText' to='/certifications'>Certificaciones</NavDropdown.Item>
-              <NavDropdown.Item as={Link} className='navbarText' to='/experience'>Experiencia</NavDropdown.Item>
+              <NavDropdown.Item as={NavHashLink} className='navbarText' to='#skills'>Habilidades</NavDropdown.Item>
+              <NavDropdown.Item as={NavHashLink} className='navbarText' to='#education'>Educación</NavDropdown.Item>
+              <NavDropdown.Item as={NavHashLink} className='navbarText' to='#certifications'>Certificaciones</NavDropdown.Item>
+              <NavDropdown.Item as={NavHashLink} className='navbarText' to='#experience'>Experiencia</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='/portafolio' className='navbarText'>Portafolio</Nav.Link>
+            <Nav.Link as={NavHashLink} to='#portfolio' className='navbarText'>Proyectos</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/" target='_blank'><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito" target='_blank'><Github size={25}/></Nav.Link>
       
-
-            {/* <NavDropdown title="Contacto" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://www.linkedin.com/in/millaray-painemil/"><Linkedin/> Linkedin</NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/yumikosito"><Github/> Github</NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

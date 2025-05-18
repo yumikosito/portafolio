@@ -7,8 +7,8 @@ const Certifications = () => {
   const { certs } = useContext(GetContext)
   return (
     <div>
-      <Container className='mt-2 py-2'>
-        <h1 className='mb-4'>Certificaciones</h1>
+      <Container className='mt-2 py-2' id='certifications'>
+        <h1 className='mb-4 mt-5'>Certificaciones</h1>
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>Diplomados</Accordion.Header>

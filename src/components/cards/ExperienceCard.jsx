@@ -9,10 +9,10 @@ const ExperienceCard = (experience) => {
         <Card >
           <div className='logoContent rounded-3' style={{backgroundColor: `${experience.color}`}}>
             <Row className=''>
-                <Col xs={4} sm={3}>
+                <Col xs={4}>
                   <Image src={experience.img} />
                 </Col>
-                <Col xs={8} sm={9} className='d-flex flex-column justify-items-around py-3 px-2'>
+                <Col xs={8} className='d-flex flex-column justify-items-around py-3 px-2'>
                     <p className='roleText my-0 '>{experience.role}</p>
                     <p className='placeText my-0'>{experience.place}</p>
                     <p className='dateText my-0'> {experience.time}</p>

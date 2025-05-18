@@ -10,7 +10,7 @@ const projects = [{
       {name:'Funciones',items: ['Autentificacion de usuario','Filtrado por categoría y precio', 'Crear, modificar y eliminar productos propios', 'Carro de compras', 'Verificaciones de requisitos']},
       {name: 'Frontend', items: ['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']},
       {name: 'Backend', items: ['Node.js', 'Express.js','PostgreSQL','Jest', 'JWT', 'bcrypt']}]},
-  url:'https://ff-marketplace.capybar.org/',
+  website:{status:true, url:'https://ff-marketplace.capybar.org/'},
 },{
   imgMb:'/portfolio/Capybar-mb.png',
   imgLg:'/portfolio/Capybar-lg.png',
@@ -22,7 +22,7 @@ const projects = [{
     details:[
       {name:'Funciones', items: ['Realizar maquetas','Discutir propuestas', 'Seleccionar plantilla existente y modificar según a lo necesitado']},
       {name:'Frontend', items:['Wordpress']}]},
-  url:'https://capybar.org/',
+  website:{status:true, url:'https://capybar.org/'}
 },{
   imgMb:'',
   imgLg:'',
@@ -35,7 +35,7 @@ const projects = [{
       {name:'Funciones', items: ['']},
       {name:'Frontend', items:['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']}
     ]},
-  url:'https://capybar.org/',
+  website:{status:false}
 }
 ]
 export const ProjectsJs = async () => {

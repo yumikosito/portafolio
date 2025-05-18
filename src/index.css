@@ -29,7 +29,7 @@
 :root {
   --orangeColor: rgb(240, 147, 93);
   --purpleColor: #753467;
-  --skyBlue:#89e7f8;
+  --skyBlue:#adf0fc;
   --whiteColor:#f3f3f3;
   --greenColor:#6ab10e;
   --blackColor:#494949;
@@ -52,7 +52,7 @@ a{
 
 h1{
   font-family: 'Lato-Bold-Italic';
-  text-decoration: underline wavy var(--pinkColor);
+  text-decoration: underline wavy var(--skyBlue);
   text-decoration-thickness: 1.5px;
   color: var(--purpleColor);
 }
@@ -97,11 +97,14 @@ h3{
 }
  .dropdown-menu.show{
   border: var(--greenColor) 1px solid;
-  background-color:  rgba(78, 78, 78, 0.7);;
+  background-color:  rgba(78, 78, 78, 0.7);
 
 }
+.dropdown-item.active{
+  background-color:  rgba(78, 78, 78, 0.7);
+}
 .navbar-toggler{
-  background-color:rgba(78, 78, 78, 0.3);;
+  background-color:none;
   border:none;
 
   &:focus{
@@ -381,6 +384,15 @@ hr{
   border: var(--greenColor) 0.3rem solid;
   margin: 1rem auto;
 }
+
+.vr{
+  display:inline;
+  height:70%;
+  width:1px;
+  border:var(--greenColor) 1px solid;
+  padding: 0;
+ 
+}
 }
 /* CSS Languages */
 
@@ -411,8 +423,27 @@ hr{
   background-color: var(--skyBlue);
 }
 }
-/* CSS experience */
 
+/* CSS Soft */
+
+#softCard {
+  p{
+    font-family: 'Lato-Regular';
+    font-size: 1.3rem;
+   
+    color: var(--blackColor);
+  }
+}
+
+.skillHr{
+  width: 70%;
+  align-items: center;
+  border: var(--purpleColor) 0.3rem solid;
+  margin: 2rem auto;
+}
+
+
+/* CSS experience */
 
 #expCard {
  position : relative;
@@ -506,8 +537,6 @@ hr{
   transition: ease-in-out 0.2s;
 
 }
-
-
 .portTitle {
   font-size: 1.4rem;
   color:var(--purpleColor);
@@ -533,6 +562,7 @@ hr{
 }
 
 .portText{
+  color: var(--blackColor);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -563,6 +593,15 @@ hr{
   color: var(--blackColor);
   font-weight: 700;
 }
+.portListLink.list-group-item:hover p{
+  color: var(--blackColor);
+  font-weight: 700;
+}
+
+.portListLink.list-group-item p {
+  color:var(--purpleColor)
+}
+
 
 
 .activeLinkText{

@@ -7,12 +7,12 @@ const Portfolio = () => {
   const { ports } = useContext(GetContext)
   return (
     <div>
-      <Container className='mt-2 py-2'>
-        <h1>Portfolio</h1>
+      <Container className='mt-2 py-2' id='portfolio'>
+        <h1 className='mt-5'>Proyectos</h1>
         <Row>
 
         { ports.map((port,index) =>(
-          <Col xs={12} lg={6} className='my-5' key={index}>
+          <Col xs={12} xl={6} className='my-5' key={index}>
             <PortfolioCard {...port}/>
           </Col>
         ))}

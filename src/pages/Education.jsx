@@ -7,9 +7,9 @@ const Education = () => {
   const { edus } = useContext(GetContext)
   
   return (
-    <div>
-      <Container className='my-1 py-2'>
-        <h1>Educación</h1>
+    <div id='education'>
+      <Container className='mt-2 py-2 mb' >
+        <h1 className='mt-5'>Educación</h1>
         <Row>
  
         {edus.map((edu,index) =>(

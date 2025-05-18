@@ -20,8 +20,16 @@ const PortfolioCard = (project) => {
                 
                 <div className='bar my-2 mx-1 rounded-3 px-3'></div>
                 <ListGroup horizontal className='px-3'>
-                  <ListGroup.Item className='portListAuthor'><FaCode size={15}/> {project.author}</ListGroup.Item>
-                  <ListGroup.Item className='portListLink' ><FiExternalLink size={15}/><a href={project.url} target="_blank"> Visitar página</a></ListGroup.Item>
+                  <ListGroup.Item className='portListAuthor'><FaCode size={15}/> {project.author}</ListGroup.Item> 
+                  <ListGroup.Item className='portListLink'>
+                    
+                    <FiExternalLink size={15}/>
+                    {project.website.status ?
+                    <a href={project.website.url} target="_blank"> Visitar página</a>
+                    :
+                    <a className=''> Privado</a>
+                    }
+                    </ListGroup.Item>
 
                 </ListGroup>
                 <p className='portText my-2 px-3 py-2'>{project.category.resume}</p>
