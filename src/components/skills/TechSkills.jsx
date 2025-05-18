@@ -56,9 +56,9 @@ const TechSkills = () => {
           <hr/>
           
           <Row className='d-flex justify-content-between my-4' >
-            <Col xs={11} lg={4} className='my-2'>
+            <Col xs={12} lg={4} className='my-2'>
               <h3>Desarrollo Backend</h3>
-              <Row  className='d-flex justify-content-around'>
+              <Row className='d-flex justify-content-around'>
                 <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center'>
                   <FaNode className='animatedIconNode' size={60}/>
                   <p className='iconTextTech'>Node.js</p>
@@ -96,7 +96,7 @@ const TechSkills = () => {
         <hr/>
       
         <Row className='d-flex justify-content-betweem my-4'>
-          <Col xs={11} md={5} xl={4} className='d-flex flex-column justify-content-center align-items-between my-2 '>
+          <Col xs={12} lg={5} className='my-2'>
             <h3>Ofimática</h3>
              <Row className='d-flex justify-content-around'>
                 <Col xs={8} className='d-flex flex-column justify-content-center align-items-center'>
@@ -112,23 +112,22 @@ const TechSkills = () => {
 
           <div  className='vr'></div>
 
-          <Col xs={11} md={5} xl={4} className='d-flex flex-column justify-content-center align-items-between my-2'>
+          <Col xs={12} lg={5} className='my-2'>
            <h3>Herramientas</h3>
-              <Row className='d-flex justify-content-around'>
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <FaGitAlt className='animatedIconGit' size={60}/>
-                  <p className='iconTextTech'>Git</p>
-                </Col>
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
-                  <FaGithub className='animatedIconGithub' size={60}/>
-                  <p className='iconTextTech'>Github</p>
-                </Col>
-              </Row>
+            <Row className='d-flex justify-content-around'>
+              <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <FaGitAlt className='animatedIconGit' size={60}/>
+                <p className='iconTextTech'>Git</p>
+              </Col>
+              <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <FaGithub className='animatedIconGithub' size={60}/>
+                <p className='iconTextTech'>Github</p>
+              </Col>
+            </Row>
           </Col>
          
-         <div  className='vr'></div>
 
-          <Col xs={12} md={5} xl={4} className='d-flex flex-column justify-content-center align-items-between my-2'>    
+          <Col xs={12} lg={5} className='my-2'>    
             <h3>Metodologías</h3>
             <Row className='d-flex justify-content-around'>
               <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
@@ -144,12 +143,14 @@ const TechSkills = () => {
 
           <div  className='vr'></div>
 
-           <Col xs={12} md={5} xl={4} className='d-flex flex-column justify-content-center align-items-between my-2'>    
+           <Col xs={12} lg={5} className='my-2'>    
             <h3>Diseño UX/UI</h3>
-            <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
-              <IoLogoFigma className='animatedIconFigma' size={60}/>
-              <p className='iconTextTech'>Figma</p>
-            </Col>
+            <Row className='d-flex justify-content-around'>
+              <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <IoLogoFigma className='animatedIconFigma' size={60}/>
+                <p className='iconTextTech'>Figma</p>
+              </Col>
+            </Row>
           </Col>
 
         </Row>
