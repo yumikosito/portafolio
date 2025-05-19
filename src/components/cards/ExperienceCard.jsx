@@ -5,7 +5,7 @@ const ExperienceCard = (experience) => {
   
   return (
     <div >
-      <Container fluid className='my-2 py-4 ps-4' id="expCard">
+      <Container fluid className='my-3 py-2' id="expCard">
         <Card >
           <div className='logoContent rounded-3' style={{backgroundColor: `${experience.color}`}}>
             <Row className=''>
@@ -23,7 +23,7 @@ const ExperienceCard = (experience) => {
             
             <div className= "content rounded-3">
               {experience.tasks.map((task,index)=>(
-                <p className='px-4 my-1' key={index}>
+                <p className='px-3 my-1' key={index}>
                 {task}
                 </p>
               ))}

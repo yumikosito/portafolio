@@ -7,12 +7,12 @@ const CertificationCard = (certification) => {
   return (
     <div>
       <Container id='certCard' className='my-3'>
-        <div className='certContent px-4 py-2' style={{backgroundColor: `${certification.color}`}}>
+        <div className='certContent px-3 py-2' style={{backgroundColor: `${certification.color}`}}>
           <Row>
-            <Col xs={3} className='d-flex justify-content-center align-items-center'>
+            <Col xs={12} sm={3} className='d-flex justify-content-center align-items-center'>
               <Image className='certImg' src={certification.img}/>
             </Col>
-            <Col xs={9} className='ps-3 d-flex flex-column' >
+            <Col xs={12} sm={9} className='ps-3 d-flex flex-column' >
               <p className='m-0 p-0 certTitle'>{certification.title}</p>
      
        

@@ -387,7 +387,7 @@ hr{
 
 .vr{
   display:inline;
-  height:70%;
+  height:80%;
   width:1px;
   border:var(--greenColor) 1px solid;
   padding: 0;
@@ -453,57 +453,61 @@ hr{
   height: 100%;
   border-radius: 5%;
   }
- .roleText{
-  font-size: 1.3rem;
-}
- .placeText,.timeText{
+  
+  .roleText{
   font-size: 1.2rem;
-}
+  font-family: 'Lato-Bold-Italic';
+  }
+
+  .placeText,.dateText{
+    font-size: 1rem;
+    font-family: 'Lato-Regular';
+  }
 
 
-.card {
-  position: relative;
-  border: none;
-  transition : 0.3s ease-in-out;
-}
+  .card {
+    position: relative;
+    border: none;
+    transition : 0.3s ease-in-out;
+  }
 
-.card:hover {
-  top : -10%;
-  height : 20rem;    
-}
+  .card:hover {
+    top : -10%;
+    height : 20rem;    
+  }
 
-.card .logoContent {
-  position : relative;
-  top : -10%;
-  z-index : 1;
-  box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
-  border: none;
-  border-radius: 5%;
-}
+  .card .logoContent {
+    position : relative;
+    top : -10%;
+    z-index : 1;
+    box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+    border: none;
+    border-radius: 5%;
+  }
 
-.card .content {
-  position : relative;
-  padding: 4rem 0.8rem 0.8rem 0.8rem;
-  top : -150px;
-  color: var(--blackColor);
-  left: +50px;
-  font-size: 1rem;
-  text-align: justify;
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.3s ease-in-out;
-  background-color : var(--pastelYellow);
-   border: none;
-    
-}
+  .card .content {
+    position : relative;
+    padding: 4rem 0.8rem 0.8rem 0.8rem;
+    top : -150px;
+    color: var(--blackColor);
+    left: +50px;
+    font-size: 1rem;
+    text-align: justify;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+    background-color : var(--pastelYellow);
+    border: none;
+      
+  }
 
- .card:hover .content {
-   margin-top : 4rem;
-   left: +50px;
-   visibility : visible;
-   opacity : 1;
-   transition-delay: 0.2s;
-}
+  .card:hover .content {
+    margin-top : 4rem;
+    left: +50px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.2s;
+  }
 }
 /* CSS portfolio */
 
@@ -514,8 +518,8 @@ hr{
   box-shadow:0 0.3rem 2rem rgba(160, 146, 142, 0.5) ;
   border: none;
   border-radius: 5%;
-  height: fit-content;
-  width: fit-content;
+  /* height: fit-content;
+  width: fit-content; */
 }
 
 
@@ -538,7 +542,7 @@ hr{
 
 }
 .portTitle {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color:var(--purpleColor);
   font-weight: 600;
 
@@ -548,6 +552,7 @@ hr{
   font-size: 1rem;
   font-weight: 600;
   color: var(--blackColor);
+  font-family: 'Lato-Regular';
   
 }
 .bar{
@@ -563,25 +568,30 @@ hr{
 
 .portText{
   color: var(--blackColor);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
+  font-family: 'Lato-Regular';
 }
 
 .list-group-item.portListLink{
   width: 13rem;
   background-color: var(--whiteColor);
   border:none;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+
+  font-family: 'Lato-Regular';
 }
+
+
 .list-group-item.portListAuthor{
   width: 11rem;
   background-color: var(--pastelPurple);
   color: var(--whiteColor);
-  font-weight: 600;
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-family: 'Lato-Regular';
 }
+
 
 .portListLink.list-group-item:hover{
    width: 13rem;
@@ -610,6 +620,7 @@ hr{
 }
 .portListDetail{
   text-align: left;
+  font-family: 'Lato-Regular';
 }
 
 .btn-info{
@@ -617,6 +628,8 @@ hr{
   border-color: var(--skyBlue);
   color: var(--blackColor);
   font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Lato-Regular';
 
 }
 .btn-info:hover{
@@ -709,16 +722,16 @@ hr{
   }
   
   .certTitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
   }
 
   .btn-info{
-  background-color: var(--purpleColor);
-  border-color: var(--purpleColor);
-  color: var(--whiteColor);
-  font-weight: 600;
-  font-size: 0.9rem;
+    background-color: var(--purpleColor);
+    border-color: var(--purpleColor);
+    color: var(--whiteColor);
+    font-weight: 600;
+    font-size: 0.9rem;
 
   }
   .btn-info:hover{
@@ -728,10 +741,10 @@ hr{
   }
 
   .certDate {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   .certPCompany{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .certCompany{

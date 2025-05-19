@@ -15,31 +15,25 @@ const EducationCard = (education) => {
           <Col xs={9}>
             <Row>
               <p className='eduTitle my-1'>{education.degree}</p>
-              <Col xs={education.certs.active ? '8': '12'}>
+              <Col xs={education.certs.active ? '7': '12'}>
                  <p className='eduPlaceTime mb-1'>{education.place}<br/>
                  {education.date}</p>
                 
               </Col>
-              
-
                 {education.certs.active ?
                 (
-                  <Col className='p-0' xs={4}>
+                  <Col className='p-0' xs={5}>
                     <DropdownButton
                       as={ButtonGroup}
                       size="sm"
                       variant="secondary"
                       title={education.certs.title}
                     >
-
                     {
                       education.certs.items.map((item,index) => (
                         <Dropdown.Item as={Link} key={index} to={item.url} target="_blank">{item.name}</Dropdown.Item>
-                        
                       ))
                     }
-
-
                   </DropdownButton>
                 </Col>
                 ) :null
