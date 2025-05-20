@@ -1,6 +1,5 @@
 const projects = [{
   imgMb:'/portfolio/FFmarket-mb.png',
-  imgLg:'/portfolio/FFmarket-lg.png',
   title:'Proyecto certificación Desarrolladora FullStack',
   date:'2025',
   author: 'Independiente',
@@ -13,7 +12,6 @@ const projects = [{
   website:{status:true, url:'https://ff-marketplace.capybar.org/'},
 },{
   imgMb:'/portfolio/Capybar-mb.png',
-  imgLg:'/portfolio/Capybar-lg.png',
   title:'Diseñadora web Wordpress',
   date:'2024',
   author: 'Independiente',
@@ -24,8 +22,7 @@ const projects = [{
       {name:'Frontend', items:['Wordpress']}]},
   website:{status:true, url:'https://capybar.org/'}
 },{
-  imgMb:'',
-  imgLg:'',
+  imgMb:'/portfolio/ciac-mb.png',
   title:'Portal de tutores CIAC',
   date:'2025',
   author: 'CIAC UTFSM',

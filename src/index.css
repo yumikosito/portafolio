@@ -580,8 +580,9 @@ hr{
     max-width:min-content;
     height: 20rem;
     transition: ease-in 0.2s;
-    object-fit: cover;
+    object-fit:cover;
     object-position: 19.5% 52%;
+    
   }
 
   .postcard:hover .portImg{
