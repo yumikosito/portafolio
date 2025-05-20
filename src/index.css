@@ -27,7 +27,7 @@
 
 
 :root {
-  --orangeColor: rgb(240, 147, 93);
+  --orangeColor: rgb(223, 82, 0);
   --purpleColor: #753467;
   --skyBlue:#adf0fc;
   --whiteColor:#f3f3f3;
@@ -164,7 +164,7 @@ h3{
 
 .devText{
   font-family: 'Jersey-Regular', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--orangeColor);
 }
 
@@ -180,7 +180,7 @@ h3{
 
 .nameText{
   font-family: 'Lato-Bold-Italic';
-  font-size: 2.5rem;
+  font-size: 2rem;
 
 }
 .tagline {
@@ -195,7 +195,7 @@ h3{
   color: var(--blackColor);
   font-family: 'Lato-Light-Italic';
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 
@@ -206,6 +206,8 @@ h3{
 
   .footerText{
     font-size: 1.3rem;
+    font-family: 'Lato-Bold-Italic';
+    color: var(--whiteColor);
   }
 }
 
@@ -369,6 +371,15 @@ h3{
   }
 }
 
+.animatedIconScrum{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #217379;
+  }
+}
+
 
 .iconTextTech{
   font-size: 1.5rem;
@@ -449,8 +460,10 @@ hr{
  position : relative;
 
   img{
-  width: 100%;
+  width:100%;
   height: 100%;
+  max-height: 7rem;
+  max-width: 7rem;
   border-radius: 5%;
   }
   

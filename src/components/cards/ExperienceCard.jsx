@@ -5,14 +5,14 @@ const ExperienceCard = (experience) => {
   
   return (
     <div >
-      <Container fluid className='my-3 py-2' id="expCard">
+      <Container className='my-3 py-2' id="expCard">
         <Card >
           <div className='logoContent rounded-3' style={{backgroundColor: `${experience.color}`}}>
             <Row className=''>
-                <Col xs={4}>
+                <Col xs={4} xl={3}>
                   <Image src={experience.img} />
                 </Col>
-                <Col xs={8} className='d-flex flex-column justify-items-around py-3 px-2'>
+                <Col xs={8} xl={9} className='d-flex flex-column justify-items-around py-3 px-2'>
                     <p className='roleText my-0 '>{experience.role}</p>
                     <p className='placeText my-0'>{experience.place}</p>
                     <p className='dateText my-0'> {experience.time}</p>

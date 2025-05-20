@@ -16,38 +16,38 @@ const TechSkills = () => {
 
           <h3>Desarrollo Frontend</h3>
           <Row className='justify-content-center py-2'>
-            <Col xs={6} md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6} md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaHtml5 className='animatedIconHTML' size={60}/>
               <p className='iconTextTech'>Html 5</p>
             </Col>
 
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaCss3Alt className='animatedIconCSS' size={60}/>
               <p className='iconTextTech'>CSS 3</p>
             </Col>
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <IoLogoJavascript className='animatedIconJavascript' size={60}/>
              <p className='iconTextTech'>JavaScript</p>
             </Col>
-            <Col xs={6}  md={3} xl={2} className='d-flex flex-column justify-content-center align-items-center' >
+            <Col xs={6}  md={3} xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1' >
               <FaBootstrap className='animatedIconBootstrap' size={60}/>
               <p className='iconTextTech'>Bootstrap</p>
             </Col>
         
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaReact className='animatedIconReact' size={60}/>
               <p className='iconTextTech'>React</p>
             </Col>
 
-            <Col xs={6}  md={3}  xl={3} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6}  md={3}  xl={3} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <IoLogoWordpress className='animatedIconWordpress' size={60}/>
              <p className='iconTextTech'>Wordpress</p>
             </Col>
-            <Col xs={6}  md={2} xl={2} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6}  md={2} xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <SiAxios className='animatedIconAxios' size={60}/>
               <p className='iconTextTech'>Axios</p>
             </Col>
-            <Col xs={6} md={4}  xl={3} className='d-flex flex-column justify-content-center align-items-center'>
+            <Col xs={6} md={4}  xl={3} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <SiReactbootstrap className='animatedIconReactB' size={60}/>
              <p className='iconTextTech'>React Bootstrap</p>
             </Col>
@@ -59,34 +59,34 @@ const TechSkills = () => {
             <Col xs={12} lg={4} className='my-2'>
               <h3>Desarrollo Backend</h3>
               <Row className='d-flex justify-content-around'>
-                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaNode className='animatedIconNode' size={60}/>
                   <p className='iconTextTech'>Node.js</p>
                 </Col>
-                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiExpress className='animatedIconExpress' size={60}/>
                   <p className='iconTextTech'>Express.js</p>
                 </Col>
               </Row>
             </Col>
 
-             {/* <div className='vr'></div> */}
+             <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} sm={6} lg={3} className='my-2' >
               <h3>Testing</h3>
               <Row className='d-flex justify-content-around'> 
-                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiJest className='animatedIconJest' size={60}/>
                   <p className='iconTextTech'>Jest</p>
                 </Col>
               </Row>
             </Col>
-            {/* <div className='vr'></div> */}
+            <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} sm={6} lg={3} className='my-2' >
               <h3>Bases de datos</h3>
               <Row className='d-flex justify-content-around'>
-                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <BiLogoPostgresql className='animatedIconPostgreSQL' size={60}/>
                   <p className='iconTextTech'>PostgreSQL</p>
                 </Col>
@@ -99,11 +99,11 @@ const TechSkills = () => {
             <Col xs={12} md={6} lg={6} className='my-2'>
               <h3>Ofimática</h3>
               <Row className='d-flex justify-content-around'>
-                  <Col xs={7} className='d-flex flex-column justify-content-center align-items-center'>
+                  <Col xs={7} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                     <TbBrandOffice className='animatedIconMicrosoft' size={60}/>
                     <p className='iconTextTech'>Microsoft Office</p>
                   </Col>
-                  <Col xs={5} className='d-flex flex-column justify-content-center align-items-center'>
+                  <Col xs={5} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                     <SiAdobephotoshop className='animatedIconPhotoshop' size={60}/>
                     <p className='iconTextTech'>Photoshop</p>
                   </Col>
@@ -111,16 +111,16 @@ const TechSkills = () => {
             </Col>
 
 
-            {/* <div  className='vr mt-1'></div> */}
+           <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} md={6} lg={5} className='my-2'>
             <h3>Herramientas</h3>
               <Row className='d-flex justify-content-around'>
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaGitAlt className='animatedIconGit' size={60}/>
                   <p className='iconTextTech'>Git</p>
                 </Col>
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaGithub className='animatedIconGithub' size={60}/>
                   <p className='iconTextTech'>Github</p>
                 </Col>
@@ -132,19 +132,18 @@ const TechSkills = () => {
               <h3>Metodologías</h3>
               <Row className='d-flex justify-content-around'>
               
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <DiScrum className='animatedIconScrum' size={60}/>
                   <p className='iconTextTech'>Scrum</p>
                 </Col>  
               </Row>
             </Col>
-
-            {/* <div  className='vr'></div> */}
+            <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} sm={6} lg={4} className='my-2'>    
               <h3>Diseño UX/UI</h3>
               <Row className='d-flex justify-content-around'>
-                <Col xs={6} className='d-flex flex-column justify-content-center align-items-center'>
+                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <IoLogoFigma className='animatedIconFigma' size={60}/>
                   <p className='iconTextTech'>Figma</p>
                 </Col>
