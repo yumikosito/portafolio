@@ -32,7 +32,7 @@ const projects = [{
   category: {
     resume: 'Elaboración de Frontend de portal de consultas de tutores del Centro Integrado de Aprendizaje en Ciencias Básicas (CIAC).',
     details:[
-      {name:'Funciones', items: ['']},
+      {name:'Funciones', items: ['Autentificacion de usuario', 'Filtrado de asignaturas','Selección múltiple de temas de consulta', 'Vista de historial de consultas de tutor']},
       {name:'Frontend', items:['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']}
     ]},
   website:{status:false}

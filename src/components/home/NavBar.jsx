@@ -43,7 +43,6 @@ const NavBar = () => {
             <Nav.Link as={NavHashLink} to='#portfolio' className='navbarText'>Proyectos</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/millaray-painemil/" target='_blank'><Linkedin size={25}/></Nav.Link>
             <Nav.Link href="https://github.com/yumikosito" target='_blank'><Github size={25}/></Nav.Link>
-      
           </Nav>
         </Navbar.Collapse>
       </Container>

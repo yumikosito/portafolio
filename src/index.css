@@ -199,6 +199,7 @@ h3{
   text-align: justify;
 }
 
+
 /* CSS Footer */
 
 #footer {
@@ -468,13 +469,15 @@ hr{
   }
   
   .roleText{
-  font-size: 1.2rem;
-  font-family: 'Lato-Bold-Italic';
+    font-size: 1.2rem;
+    font-family: 'Lato-Bold-Italic';
+    color: var(--purpleColor);
   }
 
   .placeText,.dateText{
     font-size: 1rem;
     font-family: 'Lato-Regular';
+    color: var(--blackColor);
   }
 
 
@@ -524,7 +527,36 @@ hr{
     transition-delay: 0.2s;
     height: fit-content
   }
+
+  .mdRow{
+    position : relative;
+    box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
+    border: none;
+    border-radius: 5%;
+    color: var(--blackColor);
+    font-family: 'Lato-Regular';
+    width: 100%;
+  }
+
+  .btn-info{
+    background-color: var(--pinkColor);
+    color: var(--whiteColor);
+    font-size: 0.8rem;
+    border: none;
+    width: 100%;
+    
+  }
 }
+.fade.show.popover.bs-popover-bottom{
+  border: var(--pinkColor) 0.15rem solid;
+  font-size: 0.79rem;
+  text-align: justify;
+  color: var(--blackColor);
+  font-family: 'Lato-Regular';
+}
+
+
+
 /* CSS portfolio */
 
 #portCard{
@@ -536,129 +568,128 @@ hr{
   border-radius: 5%;
   /* height: fit-content;
   width: fit-content; */
-}
+  }
 
 
-.postcard .portImg{
-  width:100%;
-  height: 100%;
-  border-radius: 5%;
-  
-  min-width:100%;
-  max-width:min-content;
-  height: 20rem;
-  transition: ease-in 0.2s;
-  object-fit: cover;
-  object-position: 19.5% 52%;
-}
+  .postcard .portImg{
+    width:100%;
+    height: 100%;
+    border-radius: 5%;
+    
+    min-width:100%;
+    max-width:min-content;
+    height: 20rem;
+    transition: ease-in 0.2s;
+    object-fit: cover;
+    object-position: 19.5% 52%;
+  }
 
-.postcard:hover .portImg{
-  transform: scale(1.1);
-  transition: ease-in-out 0.2s;
+  .postcard:hover .portImg{
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
 
-}
-.portTitle {
-  font-size: 1.5rem;
-  color:var(--purpleColor);
-  font-weight: 600;
+  }
+  .portTitle {
+    font-size: 1.5rem;
+    color:var(--purpleColor);
+    font-weight: 600;
 
-}
+  }
 
-.portDate {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--blackColor);
-  font-family: 'Lato-Regular';
-  
-}
-.bar{
-  width: 5rem;
-  height: 0.5rem;
-  background-color: var(--orangeColor);
-  transition: width 0.2s ease;
-}
+  .portDate {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blackColor);
+    font-family: 'Lato-Regular';
+    
+  }
+  .bar{
+    width: 5rem;
+    height: 0.5rem;
+    background-color: var(--orangeColor);
+    transition: width 0.2s ease;
+  }
 
- .postcard:hover .bar{
-  width: 10rem;
-}
+  .postcard:hover .bar{
+    width: 10rem;
+  }
 
-.portText{
-  color: var(--blackColor);
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-family: 'Lato-Regular';
-}
+  .portText{
+    color: var(--blackColor);
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Lato-Regular';
+  }
 
-.list-group-item.portListLink{
-  width: 13rem;
-  background-color: var(--whiteColor);
-  border:none;
-  font-size: 0.9rem;
+  .list-group-item.portListLink{
+    width: 13rem;
+    background-color: var(--whiteColor);
+    border:none;
+    font-size: 0.9rem;
 
-  font-family: 'Lato-Regular';
-}
-
-
-.list-group-item.portListAuthor{
-  width: 11rem;
-  background-color: var(--pastelPurple);
-  color: var(--whiteColor);
-  border: none;
-  font-size: 0.9rem;
-  font-family: 'Lato-Regular';
-}
+    font-family: 'Lato-Regular';
+  }
 
 
-.portListLink.list-group-item:hover{
-   width: 13rem;
-  background-color: var(--pastelGreen);
-  color: var(--blackColor);
-}
-
-.portListLink.list-group-item:hover a{
-  color: var(--blackColor);
-  font-weight: 700;
-}
-.portListLink.list-group-item:hover p{
-  color: var(--blackColor);
-  font-weight: 700;
-}
-
-.portListLink.list-group-item p {
-  color:var(--purpleColor)
-}
+  .list-group-item.portListAuthor{
+    width: 11rem;
+    background-color: var(--pastelPurple);
+    color: var(--whiteColor);
+    border: none;
+    font-size: 0.85rem;
+    font-family: 'Lato-Regular';
+  }
 
 
+  .portListLink.list-group-item:hover{
+    width: 13rem;
+    background-color: var(--pastelGreen);
+    color: var(--blackColor);
+  }
 
-.activeLinkText{
-  font-weight: 700;
+  .portListLink.list-group-item:hover a{
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .portListLink.list-group-item:hover p{
+    color: var(--blackColor);
+    font-weight: 700;
+  }
 
-}
-.portListDetail{
-  text-align: left;
-  font-family: 'Lato-Regular';
-}
+  .portListLink.list-group-item p {
+    color:var(--purpleColor)
+  }
 
-.btn-info{
-  background-color: var(--skyBlue);
-  border-color: var(--skyBlue);
-  color: var(--blackColor);
-  font-weight: 600;
-  font-size: 0.9rem;
-  font-family: 'Lato-Regular';
 
-}
-.btn-info:hover{
-  background-color: var(--pastelGreen);
-  border-color: var(--pastelGreen);
-  color: var(--blackColor);
-  font-weight: 600;
-}
 
-.tooltip.show {
-  opacity: 1;
-}
+  .activeLinkText{
+    font-weight: 700;
 
+  }
+  .portListDetail{
+    text-align: left;
+    font-family: 'Lato-Regular';
+  }
+
+  .btn-info{
+    background-color: var(--skyBlue);
+    border-color: var(--skyBlue);
+    color: var(--blackColor);
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Lato-Regular';
+
+  }
+  .btn-info:hover{
+    background-color: var(--pastelGreen);
+    border-color: var(--pastelGreen);
+    color: var(--blackColor);
+    font-weight: 600;
+  }
+
+  .tooltip.show {
+    opacity: 1;
+  }
 
 
 }
@@ -671,6 +702,7 @@ hr{
   opacity: 1 !important;
   text-align: left;
   padding: 0.5rem 0.4rem;
+  width: fit-content;
 }
 /* CSS Education */
 
@@ -721,6 +753,9 @@ hr{
 }
 
 }
+
+
+
 /* CSS Certifications */
 
 #certCard{

@@ -1,12 +1,10 @@
 import { useContext } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ExperienceCard from '../components/cards/ExperienceCard'
-
 import { GetContext } from '../contexts/getContext'
 
 const Experience = () => {
   const {exps} = useContext(GetContext)
-
   
   return (
     <div id='experience'>
@@ -18,10 +16,8 @@ const Experience = () => {
               <ExperienceCard  {...item}/>
             </Col>
           ))
-         
           }
         </Row>
-        
       </Container>
     </div>
   )

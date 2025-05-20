@@ -1,5 +1,4 @@
-import React from 'react'
-import { ButtonGroup, Card, Col, Container, Dropdown, DropdownButton, Image, ListGroup, Row } from 'react-bootstrap'
+import { ButtonGroup, Col, Container, Dropdown, DropdownButton, Image, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 const EducationCard = (education) => {

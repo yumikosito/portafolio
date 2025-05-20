@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import CertificationCard from '../components/cards/CertificationCard'
 import { Accordion, Col, Container, Row } from 'react-bootstrap'
 import { GetContext } from '../contexts/getContext'

@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import { Button, Card, Col, Container, Image, ListGroup, Overlay, OverlayTrigger, Row, Tab, Tooltip } from 'react-bootstrap'
+import { Button, Col, Container, Image, ListGroup, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import { IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
@@ -36,7 +35,6 @@ const PortfolioCard = (project) => {
                 <p className='portText my-2 px-2 py-1'>{project.category.resume}</p>
                  </Row>
                 <Row className='mb-2 d-flex mx-1 justify-content-evenly'>
-
                     {project.category.details.map((detail,index)=>(
                       <Col xs={4} className='' key={index}>
                         <OverlayTrigger

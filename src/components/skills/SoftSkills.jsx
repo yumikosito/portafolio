@@ -1,4 +1,3 @@
-import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { RxDot } from "react-icons/rx";
 
@@ -16,7 +15,6 @@ const SoftSkills = () => {
                <p><RxDot size={15}/> {item}</p>
               </Col>
             ))}
-      
         </Row>
       </Container>
     </div>
