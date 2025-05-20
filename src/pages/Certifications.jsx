@@ -16,7 +16,7 @@ const Certifications = () => {
                 <Row>
                   {certs.map((cert,index) => (
                     (cert.type===1) ? 
-                      <Col xs={12} md={6} key={index}>
+                      <Col xs={12} lg={6} key={index}>
                       <CertificationCard {...cert}/>
                       </Col>
                     :null
@@ -32,7 +32,7 @@ const Certifications = () => {
                  <Row>
                 {certs.map((cert,index) => (
                   (cert.type===0) ? 
-                    <Col xs={12} md={6} key={index}>
+                    <Col xs={12} lg={6} key={index}>
                       <CertificationCard {...cert}/>
                     </Col>
                   :null

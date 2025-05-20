@@ -128,7 +128,7 @@ const TechSkills = () => {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} sm={6} lg={4} className='my-2'>    
+            <Col xs={12} sm={6} lg={6} className='my-2'>    
               <h3>Metodologías</h3>
               <Row className='d-flex justify-content-around'>
               
@@ -140,7 +140,7 @@ const TechSkills = () => {
             </Col>
             <Col xs={1} className='vr d-none d-lg-block'></Col>
 
-            <Col xs={12} sm={6} lg={4} className='my-2'>    
+            <Col xs={12} sm={6} lg={5} className='my-2'>    
               <h3>Diseño UX/UI</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>

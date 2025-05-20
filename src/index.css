@@ -500,7 +500,7 @@ hr{
 
   .card .content {
     position : relative;
-    padding: 4rem 0.8rem 0.8rem 0.8rem;
+    
     top : -150px;
     color: var(--blackColor);
     left: +50px;
@@ -511,15 +511,18 @@ hr{
     transition : 0.3s ease-in-out;
     background-color : var(--pastelYellow);
     border: none;
+    height: 0.5rem;
       
   }
 
   .card:hover .content {
     margin-top : 4rem;
+    padding: 4rem 0.8rem 0.8rem 0.8rem;
     left: +50px;
     visibility : visible;
     opacity : 1;
     transition-delay: 0.2s;
+    height: fit-content
   }
 }
 /* CSS portfolio */
@@ -724,6 +727,8 @@ hr{
 
   .certImg {
     width: 100%;
+    max-width: 10rem;
+    max-height: auto;
     height:fit-content;
   }
 
@@ -732,6 +737,7 @@ hr{
     box-shadow:0 0.2rem 1rem rgba(160, 146, 142, 0.5) ;
     border: none;
     border-radius: 5%;
+    min-height: 8rem;
   }
   
   .certTitle {

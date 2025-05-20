@@ -89,6 +89,7 @@ const certifications =[{
   url:"https://media.licdn.com/dms/image/v2/D4D2DAQGL25op3SRMxQ/profile-treasury-document-images_800/B4DZXN7suTH4Ak-/1/1742916735343?e=1748476800&v=beta&t=UUf75TOjz5Xx9Mz21w-H-hyvJNMi4QeYno8PmmFqJ0E"
 },{
   img:'/certifications/ADL.png',
+  type:0,
   title:'Figma',
   primary_company: 'Academia Desafio Latam',
   companys:{

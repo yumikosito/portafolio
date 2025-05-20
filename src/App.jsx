@@ -22,9 +22,9 @@ function App() {
       <Skills/>
       <Education/>
       <Certifications/>
-      
-      <Portfolio/>
       <Experience/>
+      <Portfolio/>
+      
   
  
        
