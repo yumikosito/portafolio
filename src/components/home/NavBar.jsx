@@ -34,10 +34,10 @@ const NavBar = () => {
           const newToggle = !esp;
           setEsp(newToggle); 
         }}>
-          <Form.Check defaultChecked={true}
+          <Form.Check
             type="switch"
             id="langSwitch"
-            label="ENG/ESP"
+            label="ESP/ENG"
           />
         </Form>
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
