@@ -141,7 +141,35 @@ h3{
     animation-duration: 1.5s;
     color: var(--greenColor);
   }
+
+  #langSwitch {
+    background-color: var(--whiteColor);
+    color: var(--greenColor);
+
+    &:checked{
+      background-color: var(--pastelPurple);
+    }
+   
+  }
+
+  .form-check-input{
+    border-color: var(--greenColor);
+    background-image: url('./assets/img/cat.png');
+
+    &:checked{
+      border-color: var(--pastelPurple);
+    }
+
+    &:focus{
+      border-color: var(--orangeColor);
+    }
+  }
+ 
+  .form-check-label{
+      color: var(--whiteColor);
+    }
 }
+
 
 
 .navbar.scrolled {
@@ -777,7 +805,7 @@ hr{
   }
   
   .certTitle {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
@@ -786,7 +814,7 @@ hr{
     border-color: var(--purpleColor);
     color: var(--whiteColor);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
   }
   .btn-info:hover{
@@ -796,16 +824,16 @@ hr{
   }
 
   .certDate {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .certPCompany{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .certCompany{
     background-color: var(--skyBlue);
     font-weight: 550;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border-radius: 35% 13%;
   }
 

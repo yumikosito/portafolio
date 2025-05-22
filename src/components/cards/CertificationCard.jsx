@@ -1,8 +1,11 @@
+import { useContext } from 'react';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import { FcDiploma1 } from "react-icons/fc";
+import { GetContext } from '../../contexts/getContext';
 
 const CertificationCard = (certification) => {
-  
+  const { esp } = useContext(GetContext)
+
   return (
     <div>
       <Container id='certCard' className='my-3'>
@@ -31,7 +34,7 @@ const CertificationCard = (certification) => {
                 <Col xs={12} xl={4} className='align-self-end'>
                   <Button variant='info' className='d-flex align-items-center p-1' >
                     <FcDiploma1 size={22} className='me-1'/>
-                    <a href={certification.url} target="_blank" className='certButton'> Certificado</a>
+                    <a href={certification.url} target="_blank" className='certButton'> {esp ? 'Certificado': 'Certificate'}</a>
                   </Button>
                 </Col>  
               </Row>

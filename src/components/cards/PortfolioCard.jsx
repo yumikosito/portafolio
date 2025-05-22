@@ -2,9 +2,11 @@ import { Button, Col, Container, Image, ListGroup, OverlayTrigger, Row, Tooltip 
 import { IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { FaCode } from "react-icons/fa6";
+import { useContext } from 'react';
+import { GetContext } from '../../contexts/getContext';
 
 const PortfolioCard = (project) => {
-  
+  const { esp } = useContext(GetContext)
   return (
     <div>
       <Container id='portCard'>
@@ -25,9 +27,9 @@ const PortfolioCard = (project) => {
                     
                     <FiExternalLink size={13}/>
                     {project.website.status ?
-                    <a href={project.website.url} target="_blank"> Visitar página</a>
+                    <a href={project.website.url} target="_blank"> {esp ? 'Visitar página': 'Website'} </a>
                     :
-                    <a className=''> Privado</a>
+                    <a className=''> {esp ? 'Privado': 'Private'}</a>
                     }
                     </ListGroup.Item>
                 </ListGroup>

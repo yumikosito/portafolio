@@ -1,4 +1,4 @@
-const projects = [{
+const projects = {esp: [{
   imgMb:'/portfolio/FFmarket-mb.png',
   title:'Proyecto certificación Desarrolladora FullStack',
   date:'2025',
@@ -33,8 +33,45 @@ const projects = [{
       {name:'Frontend', items:['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']}
     ]},
   website:{status:false}
+}],
+
+eng: [{
+  imgMb:'/portfolio/FFmarket-mb.png',
+  title:'Project for Full Stack Developer Certification',
+  date:'2025',
+  author: 'Freelance',
+  category: {
+    resume: 'Planning and developing a marketplace-type site as a team of 2 people.',
+    details: [
+      {name:'Functions',items: ['User Authentication', 'Category and Price Filtering', 'Create, Modify, and Delete Own Products', 'Shopping Cart', 'Requirement Checks']},
+      {name: 'Frontend', items: ['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']},
+      {name: 'Backend', items: ['Node.js', 'Express.js','PostgreSQL','Jest', 'JWT', 'bcrypt']}]},
+  website:{status:true, url:'https://ff-marketplace.capybar.org/'},
+},{
+  imgMb:'/portfolio/Capybar-mb.png',
+  title:'Wordpress Website Designer',
+  date:'2024',
+  author: 'Freelance',
+  category: {
+    resume: 'Planning and developing an online community website based on a video game.',
+    details:[
+      {name:'Functions', items: ['Creating mockups', 'Discussing proposals', 'Selecting an existing template and modifying it as needed.']},
+      {name:'Frontend', items:['Wordpress']}]},
+  website:{status:true, url:'https://capybar.org/'}
+},{
+  imgMb:'/portfolio/ciac-mb.png',
+  title:'CIAC Tutor Portal',
+  date:'2025',
+  author: 'CIAC UTFSM',
+  category: {
+    resume: 'Development of the front-end for the tutor query portal of the Integrated Center for Learning in Basic Sciences (CIAC).',
+    details:[
+      {name:'Functions', items: ['User Authentication', 'Subject Filtering', 'Multiple Selection of Query Topics', 'Tutor Query History View']},
+      {name:'Frontend', items:['HTML', 'CSS', 'Javascript', 'React', 'React-Bootstrap', 'Axios']}
+    ]},
+  website:{status:false}
+}]
 }
-]
 export const ProjectsJs = async () => {
     return projects
 }

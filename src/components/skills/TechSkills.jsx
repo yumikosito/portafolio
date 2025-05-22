@@ -6,12 +6,15 @@ import { IoLogoFigma, IoLogoJavascript } from "react-icons/io5";
 import { IoLogoWordpress } from "react-icons/io";
 import { TbBrandOffice } from "react-icons/tb";
 import { DiScrum } from "react-icons/di";
+import { useContext } from 'react';
+import { GetContext } from '../../contexts/getContext';
 
 const TechSkills = () => {
+  const { esp } = useContext(GetContext)
   return (
     <div>
       <Container className='my-2 py-3' id='techSkills'>
-        <h2>- Stack Tecnológico</h2>
+        <h2>- {esp ?  'Stack Tecnológico':'Tech stack'}</h2>
         <Row className='my-2 py-2 ps-4 d-flex'>
 
           <h3>Frontend</h3>
@@ -84,7 +87,7 @@ const TechSkills = () => {
             <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} sm={6} lg={3} className='my-2' >
-              <h3>Bases de datos</h3>
+              <h3>{esp ? 'Bases de datos':'Databases'}</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <BiLogoPostgresql className='animatedIconPostgreSQL' size={60}/>
@@ -97,7 +100,7 @@ const TechSkills = () => {
         
           <Row className='d-flex justify-content-betweem my-4'>
             <Col xs={12} md={6} lg={6} className='my-2'>
-              <h3>Ofimática</h3>
+              <h3>{esp ? 'Ofimática': 'Office Tools'}</h3>
               <Row className='d-flex justify-content-around'>
                   <Col xs={7} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                     <TbBrandOffice className='animatedIconMicrosoft' size={60}/>
@@ -114,7 +117,7 @@ const TechSkills = () => {
            <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} md={6} lg={5} className='my-2'>
-            <h3>Herramientas</h3>
+            <h3>{esp ? 'Herramientas':'Tools'}</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={6} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaGitAlt className='animatedIconGit' size={60}/>
@@ -129,7 +132,7 @@ const TechSkills = () => {
           </Row>
           <Row>
             <Col xs={12} sm={6} lg={6} className='my-2'>    
-              <h3>Metodologías</h3>
+              <h3>{esp ? 'Metodologías':'Methodologies'}</h3>
               <Row className='d-flex justify-content-around'>
               
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
@@ -141,7 +144,7 @@ const TechSkills = () => {
             <Col xs={1} className='vr d-none d-lg-block'></Col>
 
             <Col xs={12} sm={6} lg={5} className='my-2'>    
-              <h3>Diseño UX/UI</h3>
+              <h3>{esp ? 'Diseño UX/UI': 'UX/UI Design'}</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <IoLogoFigma className='animatedIconFigma' size={60}/>

@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import headerImg from '../../assets/img/header-img.png'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { GetContext } from '../../contexts/getContext';
+import { IoLocationSharp } from "react-icons/io5";
 
 const Header = () => {
+  const { esp } = useContext(GetContext)
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting, setIsDeleting]=useState(false);
   const toRotate = ["Frontend", "Backend","FullStack"];
@@ -48,19 +51,7 @@ const Header = () => {
     }
   }
 
- 
 
-    useEffect(()=>{
-      const onScroll = ()=>{
-        if(window.scrollY>800){
-          setScrolled(true);
-        } else{
-          setScrolled(false);
-        }
-      }
-      window.addEventListener('scroll',onScroll);
-      return ()=>window.removeEventListener('scroll',onScroll)
-    },[])
 
   return (
     <section className='banner' id='header'>
@@ -71,19 +62,23 @@ const Header = () => {
             <TrackVisibility>
             {({isVisible})=>
               <div className={isVisible ? "animate__animated animate__fadeIn":""}>
-                <span className='tagline px-3'>Bienvenid@ a mi portafolio</span>
-                <p className='px-3 nameText'>{`Soy Millaray Painemil Herrera`}</p>
+                <span className='tagline px-3'>{esp ? 'Bienvenid@ a mi portafolio': 'Welcome to my portfolio'}</span>
+                <p className='px-3 nameText'>{esp ? 'Soy':'I am'} Millaray Painemil Herrera</p>
                 <Row className='devText ps-3 p-0 m-0'>
-                  <Col xs={12} sm={6} md={5} xxl={4} className='p-0 m-0'>
-                  <p>Desarrolladora</p>
+                  <Col xs={12} sm={esp ? '6':'4'} md={esp ? '5':'3'} xxl={esp ? '4':'3'} className='p-0 m-0'>
+                  <p>{esp ? 'Desarrolladora':'Developer'}</p>
                   </Col>
                   <Col xs={12} sm={6} md={5}  className='p-0 ps-1 m-0'>
                     <p>_<span className='wrap'>{isVisible ? `${text}`:null}</span></p>
                   </Col>
                
                 </Row>
-                {/* <span className='devText px-1'><span className='wrap'>{'Desarrolladora '}<br/> {''}{isVisible ? `${text}`:null}</span></span></p> */}
-                <p className='headerSubtext px-3'>Profesional motivada y expectante de profundizar día a día en el área de la programación. Tengo una gran preocupación de entregar resultados sobresalientes en las tareas que se me encomienden. Además de desafiarme constantemente, con tal de aprender nuevas herramientas profesionales y personales.</p>
+
+                <p className='headerSubtext px-3'>{esp ? 'Profesional motivada y expectante de profundizar día a día en el área de la programación. Tengo una gran preocupación de entregar resultados sobresalientes en las tareas que se me encomienden. Además de desafiarme constantemente, con tal de aprender nuevas herramientas profesionales y personales.':'I am a motivated professional, eager to deepen my knowledge in the field of programming every day. I am strongly committed to delivering outstanding results in any task assigned to me. Additionally, I constantly seek to challenge myself in order to learn new professional and personal tools.'}</p>
+                <div className='d-flex headerSubtext px-3'>
+                  <IoLocationSharp size={23}/> <p> Santiago, Chile</p>
+                </div>
+                
               </div>
             }
             </TrackVisibility>

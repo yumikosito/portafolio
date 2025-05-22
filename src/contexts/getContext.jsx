@@ -11,26 +11,58 @@ const [ exps, setExps] = useState([])
 const [ ports, setPorts] = useState([])
 const [ edus, setEdus ] = useState([])
 const [ certs, setCerts ] = useState([])
+const [ esp, setEsp] = useState('')
+
+console.log(esp);
+console.log(certs);
 
 
   const getExp = async () =>{
-     const res = await ExperienceJs()
-     setExps(res)
+    if(esp){
+      const res= await ExperienceJs();
+      setExps(res.esp)
+
+    } else {
+      const res= await ExperienceJs();
+      setExps(res.eng)
+    }
   }
 
-   const getPort = async () =>{
-     const res = await ProjectsJs()
-     setPorts(res)
+  const getPort = async () =>{
+    if(esp){
+        const res= await ProjectsJs();
+        setPorts(res.esp)
+
+
+    }
+    else {
+        const res= await ProjectsJs();
+        setPorts(res.eng)
+    }
   }
 
   const getEdu = async () =>{
-    const res = await EducationJs();
-    setEdus(res)
+    if(esp){
+        const res= await EducationJs();
+        setEdus(res.esp)
+
+    }
+    else {
+        const res= await EducationJs();
+        setEdus(res.eng)
+    }
   }
 
    const getCert = async () =>{
-    const res = await CertificationsJs();
-    setCerts(res)
+       if(esp){
+        const res= await CertificationsJs();
+        setCerts(res.esp)
+        
+    }
+    else {
+        const res= await CertificationsJs();
+        setCerts(res.eng)
+    }
   }
 
   useEffect(() => {
@@ -38,10 +70,10 @@ const [ certs, setCerts ] = useState([])
     getPort();
     getEdu();
     getCert()
-  }, []);
+  }, [esp]);
 
 
-  return <GetContext.Provider value = {{exps,ports,edus,certs}}>
+  return <GetContext.Provider value = {{exps,ports,edus,certs, esp, setEsp}}>
     {children}
     </GetContext.Provider>
 }

@@ -4,14 +4,14 @@ import { Accordion, Col, Container, Row } from 'react-bootstrap'
 import { GetContext } from '../contexts/getContext'
 
 const Certifications = () => {
-  const { certs } = useContext(GetContext)
+  const { certs, esp } = useContext(GetContext)
   return (
     <div>
       <Container className='mt-2 py-2' id='certifications'>
-        <h1 className='mb-4 mt-5'>Certificaciones</h1>
+        <h1 className='mb-4 mt-5'>{esp ? 'Certificaciones': 'Certifications'}</h1>
           <Accordion>
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Diplomados</Accordion.Header>
+              <Accordion.Header>{esp ? 'Diplomados':'Diplomas'}</Accordion.Header>
               <Accordion.Body>
                 <Row>
                   {certs.map((cert,index) => (
@@ -27,7 +27,7 @@ const Certifications = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Cursos</Accordion.Header>
+              <Accordion.Header>{esp ? 'Cursos':'Courses'}</Accordion.Header>
               <Accordion.Body>
                  <Row>
                 {certs.map((cert,index) => (
