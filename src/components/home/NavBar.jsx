@@ -29,7 +29,6 @@ const NavBar = () => {
     <div>
     <Navbar fixed="top" collapseOnSelect expand="lg" id='navbarConfig' className={scrolled ?'scrolled':""}>
       <Container fluid>
-        {/* <Navbar.Brand href="#home">Millaray Painemil</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" >
           <Nav>

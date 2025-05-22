@@ -1,7 +1,7 @@
 const education =[{
   img:'/education/ADL.png',
   degree:'Desarrollador Full Stack JavaScript',
-  place: 'Academia DesafíoLatam',
+  place: 'Academia Desafío Latam',
   date:'2024 - 2025',
   color:'#e5f8cc',
   certs: {
@@ -13,7 +13,7 @@ const education =[{
 }, {
   img:'/education/ADL.png',
   degree:'Desarrollador Backend',
-  place: 'Academia DesafíoLatam',
+  place: 'Academia Desafío Latam',
   date:'2024-2025',
   color:'#e5f8cc',
   certs: {
@@ -26,7 +26,7 @@ const education =[{
 }, {
   img:'/education/ADL.png',
   degree:'Desarrollador Frontend',
-  place: 'Academia DesafíoLatam',
+  place: 'Academia Desafío Latam',
   date:'2024',
   color:'#e5f8cc',
   certs: {

@@ -14,7 +14,7 @@ const TechSkills = () => {
         <h2>- Stack Tecnológico</h2>
         <Row className='my-2 py-2 ps-4 d-flex'>
 
-          <h3>Desarrollo Frontend</h3>
+          <h3>Frontend</h3>
           <Row className='justify-content-center py-2'>
             <Col xs={6} md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaHtml5 className='animatedIconHTML' size={60}/>
@@ -57,7 +57,7 @@ const TechSkills = () => {
           
           <Row className='d-flex justify-content-between my-4' >
             <Col xs={12} lg={4} className='my-2'>
-              <h3>Desarrollo Backend</h3>
+              <h3>Backend</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaNode className='animatedIconNode' size={60}/>

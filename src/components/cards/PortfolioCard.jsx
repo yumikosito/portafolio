@@ -34,7 +34,7 @@ const PortfolioCard = (project) => {
 
                 <p className='portText my-2 px-2 py-1'>{project.category.resume}</p>
                  </Row>
-                <Row className='mb-2 d-flex mx-1 justify-content-evenly'>
+                <Row className='mb-2 pb-2 d-flex mx-1 justify-content-evenly'>
                     {project.category.details.map((detail,index)=>(
                       <Col xs={4} className='' key={index}>
                         <OverlayTrigger

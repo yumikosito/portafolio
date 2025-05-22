@@ -137,7 +137,7 @@ h3{
     text-decoration: none;
   }
   .nav-link:hover{
-    animation: tada;
+    animation: pulse;
     animation-duration: 1.5s;
     color: var(--greenColor);
   }
@@ -578,7 +578,7 @@ hr{
     
     min-width:100%;
     max-width:min-content;
-    height: 20rem;
+    height: 21rem;
     transition: ease-in 0.2s;
     object-fit:cover;
     object-position: 19.5% 52%;
