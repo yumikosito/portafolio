@@ -13,10 +13,6 @@ const [ edus, setEdus ] = useState([])
 const [ certs, setCerts ] = useState([])
 const [ esp, setEsp] = useState(true)
 
-console.log(esp);
-console.log(certs);
-
-
   const getExp = async () =>{
     if(esp){
       const res= await ExperienceJs();
