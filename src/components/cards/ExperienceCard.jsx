@@ -1,7 +1,9 @@
+import { useContext } from 'react'
 import { Button, Card, Col, Container, Image, OverlayTrigger, Popover, Row} from 'react-bootstrap'
+import { GetContext } from '../../contexts/getContext'
 
 const ExperienceCard = (experience) => {
-  
+  const { esp } = useContext(GetContext)
   return (
     <div >
       <Container className='my-3 py-2' id="expCard">
@@ -49,7 +51,7 @@ const ExperienceCard = (experience) => {
                     </Popover>
                     }
                     >
-                    <Button size="sm" className='py-1 me-1' variant="info">Funciones</Button>
+                    <Button size="sm" className='py-1 me-1' variant="info">{esp ? 'Funciones':'Functions'}</Button>
                   </OverlayTrigger>
                 </Col>
             <Col xs={12} md={12} className='m-0 p-0 d-xs-block d-sm-none d-md-block d-grid'>
@@ -64,7 +66,7 @@ const ExperienceCard = (experience) => {
                 </Popover>
                 }
                 >
-                <Button size="sm" className='mx-1 py-1' variant="info">Funciones</Button>
+                <Button size="sm" className='mx-1 py-1' variant="info">{esp ? 'Funciones':'Functions'}</Button>
               </OverlayTrigger>
             </Col>
           </Row> 
