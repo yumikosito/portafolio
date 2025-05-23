@@ -8,7 +8,7 @@ const education ={esp: [{
     active:true,
     title:'Certificados',
     items: [
-      {name:'FullStack Js', url:"https://media.licdn.com/dms/image/v2/D4D2DAQEV4aeC19oUzQ/profile-treasury-image-shrink_800_800/B4DZYlIb41HAAg-/0/1744379693880?e=1747944000&v=beta&t=ecD4UU8rGOuj00x3SY7lnKpE-2D_h9kbL6Hkj35P4Yg"}
+      {name:'FullStack Js', url:"/files/FullStack.pdf"}
     ]}
 }, {
   img:'/education/ADL.png',
