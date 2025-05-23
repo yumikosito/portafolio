@@ -10,11 +10,12 @@ const Header = () => {
   const { esp } = useContext(GetContext)
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting, setIsDeleting]=useState(false);
-  const toRotate = ["Frontend", "Backend","FullStack"];
+  const toRotate = ["Frontend", "Backend","FullStack"]
   const [text,setText]=useState('');
   const [delta,setDelta]=useState(200 - Math.random() * 100);
   const [index,setIndex]= useState(1)
   const period = 2000;
+
 
   useEffect(()=>{
     let ticker=setInterval(() => {
@@ -29,7 +30,13 @@ const Header = () => {
     let fullText = toRotate[i];
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1): fullText.substring(0, text.length + 1);
     
-    setText(updatedText);
+    if(updatedText==''){
+      setText('_')
+    } else {
+      setText(updatedText);
+    }
+
+    
 
     if (isDeleting) {
       setDelta(prevDelta => prevDelta / 2);
@@ -64,15 +71,28 @@ const Header = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn":""}>
                 <span className='tagline px-3'>{esp ? 'Bienvenid@ a mi portafolio': 'Welcome to my portfolio'}</span>
                 <p className='px-3 nameText'>{esp ? 'Soy':'I am'} Millaray Painemil Herrera</p>
-                <Row className='devText ps-3 p-0 m-0'>
-                  <Col xs={12} sm={esp ? '6':'4'} md={esp ? '5':'3'} xxl={esp ? '4':'3'} className='p-0 m-0'>
-                  <p>{esp ? 'Desarrolladora':'Developer'}</p>
+                
+                  {esp ?
+                  <Row className='devText ps-3 p-0 m-0'>
+                  <Col xs={12} sm={7} md={5} lg={6} xl={5} xxl={5} className='p-0 m-0'>
+                    <p>Desarrolladora_</p>
                   </Col>
-                  <Col xs={12} sm={6} md={5}  className='p-0 ps-1 m-0'>
-                    <p>_<span className='wrap'>{isVisible ? `${text}`:null}</span></p>
+                   <Col xs={12} sm={5} md={6}  className='p-0 ps-1 m-0'>
+                    <p><span className='wrap'>{isVisible ? `${text}`:null}</span></p>
                   </Col>
-               
-                </Row>
+                  </Row>
+                  :
+                  <Row className='devText ps-3 p-0 m-0'>
+                   <Col xs={12} sm={4} md={3}  xxl={3} className='p-0 ps-1 m-0 d-display'>
+                    <p> <span className='wrap'> {isVisible ? `${text}`:null}</span></p>
+                    </Col>
+                    <Col xs={12} sm={4} md={3}  className='p-0 m-0'>
+                    <p>_Developer</p>
+                    </Col>
+                  </Row>
+                  }
+
+              
 
                 <p className='headerSubtext px-3'>{esp ? 'Profesional motivada y expectante de profundizar día a día en el área de la programación. Tengo una gran preocupación de entregar resultados sobresalientes en las tareas que se me encomienden. Además de desafiarme constantemente, con tal de aprender nuevas herramientas profesionales y personales.':'I am a motivated professional, eager to deepen my knowledge in the field of programming every day. I am strongly committed to delivering outstanding results in any task assigned to me. Additionally, I constantly seek to challenge myself in order to learn new professional and personal tools.'}</p>
                 <div className='d-flex headerSubtext px-3'>
