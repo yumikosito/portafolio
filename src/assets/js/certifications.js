@@ -8,7 +8,7 @@ const certifications ={esp:[{
     names: ['Microsoft', 'LinkedIn']
   },
   date:'Mayo - 2025',
-  color:'#dff8d7',
+  color:'#f9facd',
   url:"/files/fundamentos-profesionales-ciberseguridad.pdf"
 
 }, {
@@ -124,6 +124,18 @@ const certifications ={esp:[{
   date:'Abril - 2024',
   color:'#fae7e7',
   url:"/files/Diplomado-AIEP.pdf"
+
+}, {
+  img:'/certifications/ADL.png',
+  type:0,
+  title:'Introducción a la programación con Python',
+  primary_company: 'Academia Desafio Latam',
+  companys:{
+    active: false
+  },
+  date:'Mayo - 2025',
+  color:'#e5f8cc',
+  url:"/files/Intro-Python.pdf"
 
 }],
 
@@ -254,6 +266,18 @@ eng:[{
   date:'April - 2024',
   color:'#fae7e7',
   url:"/files/Diplomado-AIEP.pdf"
+
+}, {
+  img:'/certifications/ADL.png',
+  type:0,
+  title:'Introduction to programming with Python',
+  primary_company: 'Desafio Latam Academy',
+  companys:{
+    active: false
+  },
+  date:'May - 2025',
+  color:'#e5f8cc',
+  url:"/files/Intro-Python.pdf"
 
 }]
 }
