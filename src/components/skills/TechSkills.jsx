@@ -8,6 +8,7 @@ import { TbBrandOffice } from "react-icons/tb";
 import { DiScrum } from "react-icons/di";
 import { useContext } from 'react';
 import { GetContext } from '../../contexts/getContext';
+import InProgressSkills from './InProgressSkills';
 
 const TechSkills = () => {
   const { esp } = useContext(GetContext)
@@ -154,6 +155,13 @@ const TechSkills = () => {
             </Col>
 
           </Row>
+          <hr/>
+          <Row>
+            <Col xs={12} className='my-2'>    
+              <h3>{esp ? 'Estudiando actualmente':'Currently studying'}</h3>
+                <InProgressSkills/>
+              </Col>
+            </Row>
         </Row>
       </Container>
       

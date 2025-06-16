@@ -97,11 +97,11 @@ h3{
 }
  .dropdown-menu.show{
   border: var(--greenColor) 1px solid;
-  background-color:  rgba(78, 78, 78, 0.7);
+  background-color:  rgba(78, 78, 78, 0.8);
 
 }
 .dropdown-item.active{
-  background-color:  rgba(78, 78, 78, 0.7);
+  background-color:  rgba(78, 78, 78, 0.1);
 }
 .navbar-toggler{
   background-color:none;
@@ -182,7 +182,7 @@ h3{
 .banner {
   margin-top: 0;
   padding: 5rem 0 2rem 0;
-  background-image: url('./assets/img/header.png');
+  background-image: url('./assets/img/header.webp');
   background-position:  center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -404,6 +404,38 @@ h3{
     animation: flash;
     animation-duration: 1.5s;
     color: #217379;
+  }
+}
+.animatedIconTailwind{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #3bd5e0;
+  }
+}
+.animatedIconPython{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #3061a0;
+  }
+}
+.animatedIconDjango{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #167958;
+  }
+}
+.animatedIconBs4{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #777777;
   }
 }
 

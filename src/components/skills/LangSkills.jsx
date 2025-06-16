@@ -19,7 +19,7 @@ const LangSkills = () => {
           </Col>
           <Col xs={6} sm={3} md={3} className='japaneseProg my-2'>
             <p className='langText m-0 p-0'>{esp ? 'Japonés':'Japanese'}</p>
-            <ProgressBar animated striped  now={15} />
+            <ProgressBar animated striped  now={25} />
           </Col>
         </Row>
       </Container>
