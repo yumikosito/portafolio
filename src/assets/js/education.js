@@ -1,4 +1,5 @@
-const education ={esp: [{
+const education ={esp: [
+  {
   img:'/education/ADL.png',
   degree:'Desarrollador Full Stack JavaScript',
   place: 'Academia Desafío Latam',

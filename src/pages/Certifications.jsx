@@ -27,7 +27,7 @@ const Certifications = () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>{esp ? 'Cursos':'Courses'}</Accordion.Header>
+              <Accordion.Header>{esp ? 'Cursos/Certificados':'Courses/Certifications'}</Accordion.Header>
               <Accordion.Body>
                  <Row>
                 {certs.map((cert,index) => (

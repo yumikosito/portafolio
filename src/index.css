@@ -439,6 +439,67 @@ h3{
   }
 }
 
+.animatedIconPlaywright{
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+  }
+}
+
+.animatedIconCypress{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #42f1cb;
+  }
+}
+
+.animatedIconSelenium{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #28db40;
+  }
+}
+
+.animatedIconPostman{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #db7028;
+  }
+}
+
+.animatedIconAppium{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #6946e9;
+  }
+}
+
+.animatedIconCucumber{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #27bb4c;
+  }
+}
+
+.animatedIconPytest{
+  color: var(--blackColor);
+  &:hover{
+    animation: flash;
+    animation-duration: 1.5s;
+    color: #b8dd30;
+  }
+}
+
 
 .iconTextTech{
   font-size: 1.5rem;

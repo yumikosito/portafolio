@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { FaBootstrap,FaHtml5, FaCss3Alt,FaReact,FaGitAlt, FaGithub, FaNode } from 'react-icons/fa'
-import { SiReactbootstrap, SiAxios, SiJest, SiExpress, SiAdobephotoshop } from "react-icons/si";
+import { SiReactbootstrap, SiAxios, SiJest, SiExpress, SiAdobephotoshop, SiCypress, SiSelenium, SiPostman, SiAppium, SiCucumber, SiPytest } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoFigma, IoLogoJavascript } from "react-icons/io5";
 import { IoLogoWordpress } from "react-icons/io";
@@ -9,6 +9,8 @@ import { DiScrum } from "react-icons/di";
 import { useContext } from 'react';
 import { GetContext } from '../../contexts/getContext';
 import InProgressSkills from './InProgressSkills';
+import PlaywrightIcon from '../../assets/img/playwright.png'
+import { TbBrandDjango } from "react-icons/tb";
 
 const TechSkills = () => {
   const { esp } = useContext(GetContext)
@@ -60,39 +62,73 @@ const TechSkills = () => {
           <hr/>
           
           <Row className='d-flex justify-content-between my-4' >
-            <Col xs={12} lg={4} className='my-2'>
+            <Col xs={12} lg={7} className='my-2'>
               <h3>Backend</h3>
               <Row className='d-flex justify-content-around'>
-                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6} md={4}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <FaNode className='animatedIconNode' size={60}/>
                   <p className='iconTextTech'>Node.js</p>
                 </Col>
-                <Col xs={6}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6} md={4}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiExpress className='animatedIconExpress' size={60}/>
                   <p className='iconTextTech'>Express.js</p>
+                </Col>
+                <Col xs={6} md={4} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <TbBrandDjango className='animatedIconDjango' size={60}/>
+                  <p className='iconTextTech'>Django</p>
                 </Col>
               </Row>
             </Col>
 
              <Col xs={1} className='vr d-none d-lg-block'></Col>
 
-            <Col xs={12} sm={6} lg={3} className='my-2' >
-              <h3>Testing</h3>
-              <Row className='d-flex justify-content-around'> 
-                <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
-                  <SiJest className='animatedIconJest' size={60}/>
-                  <p className='iconTextTech'>Jest</p>
-                </Col>
-              </Row>
-            </Col>
-            <Col xs={1} className='vr d-none d-lg-block'></Col>
-
-            <Col xs={12} sm={6} lg={3} className='my-2' >
+            <Col xs={12} sm={6} lg={4} className='my-2' >
               <h3>{esp ? 'Bases de datos':'Databases'}</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <BiLogoPostgresql className='animatedIconPostgreSQL' size={60}/>
                   <p className='iconTextTech'>PostgreSQL</p>
+                </Col>
+              </Row>
+            </Col>
+
+          </Row>
+          <hr/>
+          <Row>
+            <Col xs={12} className='my-2' >
+              <h3>Testing</h3>
+              <Row className='d-flex justify-content-around'> 
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiCypress className='animatedIconCypress' size={60}/>
+                  <p className='iconTextTech'>Cypress</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiSelenium className='animatedIconSelenium' size={60}/>
+                  <p className='iconTextTech'>Selenium</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <img src={PlaywrightIcon} className='animatedIconPlaywright' width={70}/>
+                  <p className='iconTextTech'>Playwright</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiPostman className='animatedIconPostman' size={60}/>
+                  <p className='iconTextTech'>Postman</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiAppium className='animatedIconAppium' size={60}/>
+                  <p className='iconTextTech'>Appium</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiCucumber className='animatedIconCucumber' size={60}/>
+                  <p className='iconTextTech'>Cucumber</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiJest className='animatedIconJest' size={60}/>
+                  <p className='iconTextTech'>Jest</p>
+                </Col>
+                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                  <SiPytest className='animatedIconPytest' size={60}/>
+                  <p className='iconTextTech'>Pytest</p>
                 </Col>
               </Row>
             </Col>

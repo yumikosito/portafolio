@@ -1,4 +1,38 @@
 const certifications ={esp:[{
+  img:'/certifications/ISC2.png',
+  type:0,
+  title:'Certified in Cybersecurity (CC)',
+  primary_company: 'ISC2',
+  companys:{
+    active: false
+  },
+  date:'Septiembre - 2025',
+  color:'#cbfdd4ff',
+  url:"https://www.credly.com/badges/8e7d31f7-3807-41ef-92a5-e3cd0ed8b6de/linked_in_profile"
+},{
+  img:'/certifications/ADL.png',
+  type:0,
+  title:'Fundamentos de Test Automation Engineer',
+  primary_company: 'Academia Desafio Latam',
+  companys:{
+    active: true,
+    names: ['Desafio Latam', 'Globant']
+  },
+  date:'Agosto - 2025',
+  color:'#e5f8cc',
+  url:"/files/TAE.pdf"
+}, {
+  img:'/certifications/Google.png',
+  type:0,
+  title:'Google Cybersecurity',
+  primary_company: 'Google',
+  companys:{
+    active: false
+  },
+  date:'Julio - 2025',
+  color:'#fae8ebff',
+  url:"https://coursera.org/share/2596dbff0f280cc054faf84176d3d796"
+},{
   img:'/certifications/Microsoft.png',
   type:0,
   title:'Fundamentos profesionales en ciberseguridad',
@@ -10,7 +44,6 @@ const certifications ={esp:[{
   date:'Mayo - 2025',
   color:'#f9facd',
   url:"/files/fundamentos-profesionales-ciberseguridad.pdf"
-
 }, {
   img:'/certifications/UPLA.png',
   type:0,
@@ -141,6 +174,40 @@ const certifications ={esp:[{
 
 
 eng:[{
+  img:'/certifications/ISC2.png',
+  type:0,
+  title:'Certified in Cybersecurity (CC)',
+  primary_company: 'ISC2',
+  companys:{
+    active: false
+  },
+  date:'September - 2025',
+  color:'#cbfdd4ff',
+  url:"https://www.credly.com/badges/8e7d31f7-3807-41ef-92a5-e3cd0ed8b6de/linked_in_profile"
+},{
+  img:'/certifications/ADL.png',
+  type:0,
+  title:'Test Automation Engineer Fundamentals',
+  primary_company: 'Desafio Latam Academy',
+  companys:{
+    active: true,
+    names: ['Desafio Latam', 'Globant']
+  },
+  date:'August - 2025',
+  color:'#e5f8cc',
+  url:"/files/TAE.pdf"
+},{
+  img:'/certifications/Google.png',
+  type:0,
+  title:'Google Cybersecurity',
+  primary_company: 'Google',
+  companys:{
+    active: false
+  },
+  date:'July - 2025',
+  color:'#fae8ebff',
+  url:"https://coursera.org/share/2596dbff0f280cc054faf84176d3d796"
+},{
   img:'/certifications/Microsoft.png',
   type:0,
   title:'Professional fundamentals in cybersecurity',
@@ -150,7 +217,7 @@ eng:[{
     names: ['Microsoft', 'LinkedIn']
   },
   date:'May - 2025',
-  color:'#dff8d7',
+  color:'#f9facd',
   url:"/files/fundamentos-profesionales-ciberseguridad.pdf"
 
 }, {
