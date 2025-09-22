@@ -22,38 +22,38 @@ const TechSkills = () => {
 
           <h3>Frontend</h3>
           <Row className='justify-content-center py-2'>
-            <Col xs={6} md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6} md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaHtml5 className='animatedIconHTML' size={60}/>
               <p className='iconTextTech'>Html 5</p>
             </Col>
 
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaCss3Alt className='animatedIconCSS' size={60}/>
               <p className='iconTextTech'>CSS 3</p>
             </Col>
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6}  md={3} className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <IoLogoJavascript className='animatedIconJavascript' size={60}/>
              <p className='iconTextTech'>JavaScript</p>
             </Col>
-            <Col xs={6}  md={3} xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1' >
+            <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1' >
               <FaBootstrap className='animatedIconBootstrap' size={60}/>
               <p className='iconTextTech'>Bootstrap</p>
             </Col>
         
-            <Col xs={6}  md={3}  xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <FaReact className='animatedIconReact' size={60}/>
               <p className='iconTextTech'>React</p>
             </Col>
 
-            <Col xs={6}  md={3}  xl={3} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <IoLogoWordpress className='animatedIconWordpress' size={60}/>
              <p className='iconTextTech'>Wordpress</p>
             </Col>
-            <Col xs={6}  md={2} xl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <SiAxios className='animatedIconAxios' size={60}/>
               <p className='iconTextTech'>Axios</p>
             </Col>
-            <Col xs={6} md={4}  xl={3} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+            <Col xs={6} md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
               <SiReactbootstrap className='animatedIconReactB' size={60}/>
              <p className='iconTextTech'>React Bootstrap</p>
             </Col>
@@ -62,7 +62,7 @@ const TechSkills = () => {
           <hr/>
           
           <Row className='d-flex justify-content-between my-4' >
-            <Col xs={12} lg={7} className='my-2'>
+            <Col xs={12} lg={6} className='my-2'>
               <h3>Backend</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={6} md={4}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
@@ -82,7 +82,7 @@ const TechSkills = () => {
 
              <Col xs={1} className='vr d-none d-lg-block'></Col>
 
-            <Col xs={12} sm={6} lg={4} className='my-2' >
+            <Col xs={12} sm={6} lg={5} className='my-2' >
               <h3>{esp ? 'Bases de datos':'Databases'}</h3>
               <Row className='d-flex justify-content-around'>
                 <Col xs={12} className='d-flex flex-column justify-content-center align-items-center pt-1'>
@@ -98,35 +98,35 @@ const TechSkills = () => {
             <Col xs={12} className='my-2' >
               <h3>Testing</h3>
               <Row className='d-flex justify-content-around'> 
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiCypress className='animatedIconCypress' size={60}/>
                   <p className='iconTextTech'>Cypress</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiSelenium className='animatedIconSelenium' size={60}/>
                   <p className='iconTextTech'>Selenium</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <img src={PlaywrightIcon} className='animatedIconPlaywright' width={70}/>
                   <p className='iconTextTech'>Playwright</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiPostman className='animatedIconPostman' size={60}/>
                   <p className='iconTextTech'>Postman</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiAppium className='animatedIconAppium' size={60}/>
                   <p className='iconTextTech'>Appium</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiCucumber className='animatedIconCucumber' size={60}/>
                   <p className='iconTextTech'>Cucumber</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}  className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiJest className='animatedIconJest' size={60}/>
                   <p className='iconTextTech'>Jest</p>
                 </Col>
-                <Col xs={6}  md={3}  xxl={2} className='d-flex flex-column justify-content-center align-items-center pt-1'>
+                <Col xs={6}  md={3}   className='d-flex flex-column justify-content-center align-items-center pt-1'>
                   <SiPytest className='animatedIconPytest' size={60}/>
                   <p className='iconTextTech'>Pytest</p>
                 </Col>
@@ -136,7 +136,7 @@ const TechSkills = () => {
           <hr/>
         
           <Row className='d-flex justify-content-betweem my-4'>
-            <Col xs={12} md={6} lg={6} className='my-2'>
+            <Col xs={12} md={6} className='my-2'>
               <h3>{esp ? 'Ofimática': 'Office Tools'}</h3>
               <Row className='d-flex justify-content-around'>
                   <Col xs={7} className='d-flex flex-column justify-content-center align-items-center pt-1'>

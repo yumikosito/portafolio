@@ -1,5 +1,19 @@
-const projects = {esp: [{
-  imgMb:'',
+const projects = {esp: [
+  {
+  imgMb:'/portfolio/AskOmDch.png',
+  title:'Pruebas automatizadas UI a AskOmDch',
+  date:'2025',
+  author: 'Independiente',
+  category: {
+    resume: 'Pruebas automatizadas UI a distintas funciones a página pública para pruebas tipo e-commerce.',
+    details: [
+      {name:'Funciones',items: ['Pruebas a registro e inicio de sesión', 'Pruebas a función de filtrado de productos', 'Pruebas a detalles de productos', 'Pruebas a función de carrito', 'Pruebas a proceso de compra']},
+      {name: 'Frontend', items: ['Playwright', 'Pytest', 'Behave', 'Python']},
+      {name: 'Reportes', items: ['Allure']}
+    ]},
+  website:{status:true, url:'https://github.com/yumikosito/test-askomdch'},
+},{
+  imgMb:'/portfolio/without-preview.png',
   title:'Proyecto curso Test Automation Engineer',
   date:'2025',
   author: 'Independiente',
@@ -48,6 +62,37 @@ const projects = {esp: [{
 }],
 
 eng: [{
+  imgMb:'/portfolio/AskOmDch.png',
+  title:'UI Automated Testing on AskOmDch',
+  date:'2025',
+  author: 'Freelance',
+  category: {
+    resume: 'UI automated testing on various features of a public test e-commerce site.',
+    details: [
+      {name:'Functions',items: ['Tests on registration and login',
+        'Tests on product filtering functionality',
+        'Tests on product detail pages',
+        'Tests on cart functionality',
+        'Tests on checkout process']},
+      {name: 'Frontend', items: ['Playwright', 'Pytest', 'Behave', 'Python']},
+      {name: 'Reports', items: ['Allure']}
+    ]},
+  website:{status:true, url:'https://github.com/yumikosito/test-askomdch'},
+},{
+  imgMb:'/portfolio/without-preview.png',
+  title:'Test Automation Engineer Course Project',
+  date:'2025',
+  author: 'Freelance',
+  category: {
+    resume: 'Planning and development of automated UI and API CRUD tests as part of a 3-person team.',
+    details: [
+      {name:'Functions',items: ['Automation of product creation, update, and deletion',
+        'Automation of customer creation, update, and deletion',
+        'Verification of correct user registration and login']},
+      {name: 'Frontend', items: ['Playwright', 'Cucumber.js', 'Javascript', 'cucumber-html-reporter']},
+      {name: 'Backend', items: ['Node.js','Jest', 'SuperTest', 'jest-html-reporters']}]},
+  website:{status:true, url:'https://github.com/yumikosito/adl-testing'},
+},{
   imgMb:'/portfolio/FFmarket-mb.png',
   title:'Project for Full Stack Developer Certification',
   date:'2025',
