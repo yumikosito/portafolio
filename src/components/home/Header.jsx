@@ -10,8 +10,8 @@ const Header = () => {
   const { esp } = useContext(GetContext)
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting, setIsDeleting]=useState(false);
-  const toRotate_esp = ["Desarrolladora _Frontend", "Desarrolladora _Backend","Software _Tester","Desarrolladora _FullStack"]
-  const toRotate = ["Frontend_Developer", "Backend_Developer","Software_Tester","FullStack_Developer"]
+  const toRotate_esp = ["Desarrolladora _FullStack","QA _Tester", "QA _Automation", "Desarrolladora _Frontend", "Desarrolladora _Backend"]
+  const toRotate = ["FullStack _Developer","QA _Tester", "QA _Automation", "Frontend _Developer", "Backend _Developer"]
   const [text,setText]=useState('');
   const [delta,setDelta]=useState(200 - Math.random() * 100);
   const [index,setIndex]= useState(1)
@@ -77,7 +77,7 @@ const Header = () => {
                   </Row>
                   : */}
                   <Row className='devText ps-3 p-0 m-0'>
-                   <Col xs={12} sm={4} md={3}  xxl={3} className='p-0 ps-1 m-0 d-display'>
+                   <Col xs={12} className='p-0 ps-1 m-0 d-display'>
                     <p> <span className='wrap'> {isVisible ? `${text}`:null}</span></p>
                     </Col>
                     {/* <Col xs={12} sm={4} md={3}  className='p-0 m-0'>

@@ -5,7 +5,7 @@ const experience ={esp: [
   place: 'Globant',
   time:'Agosto 2025 - Septiembre 2025',
   color:'#dffcd4ff',
-  tasks: ['Conocer y aprender sobre los roles en equipos multidisciplinarios en el área de TI.', 'Aplicar tests de UI usando Playwright, Python y Behave en un sitio de ecommerce.', 'Aplicar tests de API usando Bruno y Javascript.']
+  tasks: ['Participación en charlas sobre los equipos multidisciplinarios de TI, adquiriendo comprensión de los distintos roles y del ciclo completo de desarrollo.', 'Aplicación de pruebas automatizadas de UI en un sitio de ecommerce utilizando Playwright, Python y Behave con enfoque BDD.', 'Ejecución de pruebas de APIs REST empleando Bruno y JavaScript, validando endpoints, respuestas y manejo de errores.']
   }, {
   img:'/experience/ucchristus.png',
   role:'Nutricionista clínica',
@@ -21,7 +21,7 @@ const experience ={esp: [
   place: 'Globant',
   time:'Agosto 2025 - Septiembre 2025',
   color:'#dffcd4ff',
-  tasks: ['Learn about and understand the roles within multidisciplinary teams in the IT field.', 'Perform UI testing using Playwright, Python, and Behave.', 'Perform API testing using Bruno with JavaScript.']
+  tasks: ['Participation in talks about multidisciplinary IT teams, gaining an understanding of different roles and the full development lifecycle.', 'Applied automated UI tests on an e-commerce site using Playwright, Python, and Behave with a BDD approach.', 'Executed REST API tests using Bruno and JavaScript, validating endpoints, responses, and error handling.']
   }, {
   img:'/experience/ucchristus.png',
   role:'Clinical Nutritionist',

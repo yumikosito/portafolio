@@ -1,4 +1,16 @@
 const projects = {esp: [{
+  imgMb:'',
+  title:'Proyecto curso Test Automation Engineer',
+  date:'2025',
+  author: 'Independiente',
+  category: {
+    resume: 'Planificación y elaboración en un equipo de 3 personas de test automatizados CRUD a UI y API.',
+    details: [
+      {name:'Funciones',items: ['Automatización en crear, modificar y eliminar productos', 'Automatización en crear, modificar y eliminar clientes', 'Verificación de correcto registro e inicio de sesión de usuario']},
+      {name: 'Frontend', items: ['Playwright', 'Cucumber.js', 'Javascript', 'cucumber-html-reporter']},
+      {name: 'Backend', items: ['Node.js','Jest', 'SuperTest', 'jest-html-reporters']}]},
+  website:{status:true, url:'https://github.com/yumikosito/adl-testing'},
+},{
   imgMb:'/portfolio/FFmarket-mb.png',
   title:'Proyecto certificación Desarrolladora FullStack',
   date:'2025',
