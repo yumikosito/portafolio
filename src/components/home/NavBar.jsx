@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext, useRef } from 'react';
 import { Linkedin, Github} from 'react-bootstrap-icons';
 import { NavHashLink } from 'react-router-hash-link';
 import { Form } from 'react-bootstrap';
@@ -12,25 +12,49 @@ import { GetContext } from '../../contexts/getContext';
 const NavBar = () => {
   const { esp, setEsp } = useContext(GetContext)
   const [scrolled,setScrolled]=useState(false);
+  const [expanded, setExpanded] = useState(false);
 
-  useEffect(()=>{
-    const onScroll = ()=>{
-      if(window.scrollY>50){
-        setScrolled(true);
-      } else{
-        setScrolled(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        expanded && 
+        navRef.current &&
+        !navRef.current.contains(event.target)
+      ) {
+        setExpanded(false); 
       }
-    }
-    window.addEventListener('scroll',onScroll);
-    return ()=>window.removeEventListener('scroll',onScroll)
-  },[])
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [expanded]);
 
 
   return (
     <div>
-    <Navbar fixed="top" collapseOnSelect expand="lg" id='navbarConfig' className={scrolled ?'scrolled':""}>
+      <Navbar
+        ref={navRef}
+        fixed="top"
+        expand="lg"
+        expanded={expanded}
+        onToggle={setExpanded}
+        id="navbarConfig"
+        className={scrolled ? "scrolled" : ""}
+      >
       <Container fluid>
-        <Form onChange={(e) =>{
+        <Form onChange={() =>{
           const newToggle = !esp;
           setEsp(newToggle); 
         }}>
@@ -40,8 +64,8 @@ const NavBar = () => {
             label="ESP/ENG"
           />
         </Form>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"  />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" >
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" >
           <Nav>
             <Nav.Link as={NavHashLink} className='navbarText' to='#header'>Home</Nav.Link>
             <NavDropdown title={esp ? "Sobre mí":"About me"} className='navbarText'>

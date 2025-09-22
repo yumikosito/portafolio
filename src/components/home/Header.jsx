@@ -10,7 +10,7 @@ const Header = () => {
   const { esp } = useContext(GetContext)
   const [loopNum,setLoopNum]=useState(0);
   const [isDeleting, setIsDeleting]=useState(false);
-  const toRotate_esp = ["Desarrolladora_Frontend", "Desarrolladora_Backend","Software_Tester","Desarrolladora_FullStack"]
+  const toRotate_esp = ["Desarrolladora _Frontend", "Desarrolladora _Backend","Software _Tester","Desarrolladora _FullStack"]
   const toRotate = ["Frontend_Developer", "Backend_Developer","Software_Tester","FullStack_Developer"]
   const [text,setText]=useState('');
   const [delta,setDelta]=useState(200 - Math.random() * 100);
@@ -85,7 +85,7 @@ const Header = () => {
                     </Col> */}
                   </Row>
                   {/* } */}
-                <p className='headerSubtext px-3'>{esp ? 'Soy una profesional con formación original en Nutrición, lo que me ha otorgado una base sólida en el pensamiento crítico, el análisis de datos y la resolución empática de problemas. Tengo un enfoque particular en la ciberseguridad, con el objetivo de desarrollar aplicaciones seguras, confiables y eficientes. Me caracterizo por mi motivación hacia el aprendizaje constante, capacidad de adaptación y compromiso con la excelencia. Tengo un fuerte enfoque en entregar soluciones funcionales y de alta calidad, enfrentando desafíos que me permitan crecer tanto técnica como profesionalmente.':'I am a professional with an academic background in Nutrition, which has provided me with a solid foundation in critical thinking, data analysis, and empathetic problem-solving. I have a particular focus on cybersecurity, with the goal of developing secure, reliable, and efficient applications. I am known for my motivation for continuous learning, adaptability, and commitment to excellence. I have a strong focus on delivering high-quality, functional solutions, and I thrive on challenges that allow me to grow both technically and professionally.'}</p>
+                <p className='headerSubtext px-3'>{esp ? 'Soy desarrolladora Fullstack con base en Nutrición, lo que me aporta una mirada analítica, crítica y empática para resolver problemas. Me especializo en ciberseguridad y calidad, aplicando principios de testing funcional, automatizado y validación manual. Aporto una visión de tester durante todo el ciclo de desarrollo, enfocándome en crear soluciones seguras, eficientes y sostenibles. Me motiva el aprendizaje continuo y los desafíos que impulsen mi crecimiento profesional y técnico.':'I’m a Fullstack Developer with a background in Nutrition, which gives me an analytical, critical, and empathetic approach to problem-solving. I specialize in cybersecurity and quality assurance, applying functional testing, automation, and manual validation. I bring a tester’s mindset to the entire development cycle, focusing on building secure, efficient, and sustainable solutions. I’m driven by continuous learning and challenges that foster my technical and professional growth.'}</p>
                 <div className='d-flex headerSubtext px-3'>
                   <IoLocationSharp size={23}/> <p> Santiago, Chile</p>
                 </div>
