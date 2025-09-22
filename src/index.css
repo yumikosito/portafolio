@@ -701,7 +701,7 @@ hr{
     height: 21rem;
     transition: ease-in 0.2s;
     object-fit:cover;
-    object-position: 19.5% 52%;
+    object-position: 50% 52%;
     
   }
 
@@ -757,7 +757,7 @@ hr{
     background-color: var(--pastelPurple);
     color: var(--whiteColor);
     border: none;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-family: 'Lato-Regular';
   }
 

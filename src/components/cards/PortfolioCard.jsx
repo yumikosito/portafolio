@@ -22,10 +22,10 @@ const PortfolioCard = (project) => {
                 <div className='bar my-2 mx-1 rounded-3 px-'></div>
 
                 <ListGroup horizontal className='px-1'>
-                  <ListGroup.Item className='portListAuthor'><FaCode size={13}/> {project.author}</ListGroup.Item> 
+                  <ListGroup.Item className='portListAuthor'><FaCode size={11}/> {project.author}</ListGroup.Item> 
                   <ListGroup.Item className='portListLink'>
                     
-                    <FiExternalLink size={13}/>
+                    <FiExternalLink size={11}/>
                     {project.website.status ?
                     <a href={project.website.url} target="_blank"> {esp ? 'Visitar página': 'Website'} </a>
                     :
