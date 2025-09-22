@@ -1,16 +1,16 @@
 const experience ={esp: [
   {
   img:'/experience/globant.png',
-  role:'Pasante de Test Automation Engineer',
+  role:'Pasante Test Automation Engineer',
   place: 'Globant',
-  time:'Agosto 2025 - Septiembre 2025',
+  time:'Ago 2025 - Sep 2025',
   color:'#dffcd4ff',
   tasks: ['Participación en charlas sobre los equipos multidisciplinarios de TI, adquiriendo comprensión de los distintos roles y del ciclo completo de desarrollo.', 'Aplicación de pruebas automatizadas de UI en un sitio de ecommerce utilizando Playwright, Python y Behave con enfoque BDD.', 'Ejecución de pruebas de APIs REST empleando Bruno y JavaScript, validando endpoints, respuestas y manejo de errores.']
   }, {
   img:'/experience/ucchristus.png',
   role:'Nutricionista clínica',
   place: 'Hospital Cínico UC Christus',
-  time:'Marzo 2021 - Marzo 2024',
+  time:'Mar 2021 - Mar 2024',
   color:'#f3e3f8',
   tasks: ['Trato directo con pacientes, equipo médico multidisciplinario, personal dietético y personal de central de alimentación.', 'Planificación y pedido de orden dietética según lo requerido por paciente, relacionando patologías, síntomas, preferencias e indicación médica.', 'Supervisión de personal dietético para entrega de bandejas, almuerzos especiales, rellenado de controles de ingesta e hidratación.']
   }

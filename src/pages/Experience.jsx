@@ -12,7 +12,7 @@ const Experience = () => {
         <h1 className='mt-5'>{esp ? 'Experiencia':'Experience'}</h1>
         <Row className='my-1 py-1 d-flex'>
           {exps.map((item, index) =>(
-            <Col xs={12} md={6} key={index}>
+            <Col xs={12} md={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 0 }} key={index}>
               <ExperienceCard  {...item}/>
             </Col>
           ))
