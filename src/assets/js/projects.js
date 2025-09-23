@@ -13,7 +13,7 @@ const projects = {esp: [
     ]},
   website:{status:true, url:'https://github.com/yumikosito/test-askomdch'},
 },{
-  imgMb:'/portfolio/without-preview.png',
+  imgMb:'/portfolio/portfolio-without.png',
   title:'Proyecto curso Test Automation Engineer',
   date:'2025',
   author: 'Independiente',
